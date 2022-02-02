@@ -13,6 +13,12 @@ theme:
 extra_css:
   - stylesheets/extra.css
 
+markdown_extensions:
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
 nav:
   - Inicio: index.md
   - Documento Visão: DocVisao.md
+  - Reuniões: reunioes.md

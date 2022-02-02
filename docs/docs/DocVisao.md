@@ -42,14 +42,15 @@ Ao contrário | Da concorrente Sumá
 Nosso produto | Oferecerá uma plataforma intuitiva e sem maiores burocracias.
 
 ### 1.3 Objetivo do Produto
-<p style="text-align: justify">
-FALTA
-</p>
+
+Auxiliar pequenos e medios produtores rurais com a venda de produtos, para que assim eles possam expandir suas carteiras de clientes.<br>
+Aumentar a visibilidade no mercado de produtos adivindos desses produtores.
+
 
 ## 2. Abordagem de Desenvolvimento de Software
 ### 2.1 Qual é o tamanho do sistema que está sendo desenvolvido?
 <p style="text-align: justify">
-FALTA
+
 </p>
 
 ### 2.2 Que tipo de sistema está sendo desenvolvido?

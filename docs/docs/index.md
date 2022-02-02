@@ -1,7 +1,7 @@
 # DaTerra
 ## Equipe X-Force
 
-Disciplina: Requisitos de Software                                 
+Disciplina: Requisitos de Software<br>
 Docente: George Marsicano 
 
 ## Resultados
