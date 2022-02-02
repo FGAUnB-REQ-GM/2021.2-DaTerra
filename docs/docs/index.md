@@ -7,7 +7,7 @@ Docente: George Marsicano
 ## Resultados
 #### Entrega 03/02 - Unidade 1:
 
-### Membros X-Force
+## Membros X-Force
 Integrantes|GitHub
 ------------------------|-------
 Cristian Furtado| csafurtado
