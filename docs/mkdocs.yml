@@ -1,1 +1,14 @@
-site_name: My Docs
+site_name: DaTerra
+repo_url: https://github.com/FGAUnB-REQ-GM/2021.2-DaTerra
+repo_name: ''
+
+theme:
+  name: material
+  language: 'pt'
+  logo: ''
+  favicon: ''
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - Inicio: index.md
