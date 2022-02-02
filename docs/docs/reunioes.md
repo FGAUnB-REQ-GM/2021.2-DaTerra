@@ -18,7 +18,18 @@ Terminar de preencher o documento visão e fazer as correcoes solicitadas pelo p
 
 ### Objetivos
 - [x] Criar pagina da documentação
-- [x] Terminar documento de visão
+- [ ] Terminar documento de visão
 
 ### Até proxima reunião
 - Gravar o video de apresentação
+
+
+## Reunião 3 - 02/02
+### Descrição
+Terminar de preencher o documento visão e fazer as correcoes solicitadas pelo professor.
+
+### Objetivos
+- [x] Terminar documento de visão
+- [x] Gravar video de apresentação
+
+

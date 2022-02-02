@@ -48,25 +48,15 @@ Aumentar a visibilidade no mercado de produtos adivindos desses produtores.
 
 
 ## 2. Abordagem de Desenvolvimento de Software
-### 2.1 Qual é o tamanho do sistema que está sendo desenvolvido?
 <p style="text-align: justify">
-
+Escolhemos a metodologia ágil Scrum como base para o nosso projeto.
+Utilizaremos os artefatos: product backlog, sprint backlog e um produto incremental possivelmente lançável.
+Realizaremos os eventos: sprint, sprint planning, daily scrum, sprint review e sprint retrospective.
+Ainda, utilizaremos a prática chave do XP Programming, a programação por pares (pair programming).
+Também utilizaremos um quadro Kanban, para acompanhamento dos backlogs.
+Também utilizaremos Lean Inception como ferramenta para alinhar o entendimento das áreas de negócio do produto entre a equipe.
 </p>
 
-### 2.2 Que tipo de sistema está sendo desenvolvido?
-<p style="text-align: justify">
-FALTA
-</p>
-
-### 2.3 Qual é a vida útil prevista para o sistema? 
-<p style="text-align: justify">
-FALTA
-</p>
-
-### 2.4 O sistema está sujeito a controle externo?
-<p style="text-align: justify">
-FALTA
-</p>
 
 ## 3. Abordagem de engenharia de Requisitos 
 <p style="text-align: justify">
@@ -76,29 +66,36 @@ A abordagem que será utilizada no projeto é baseada nos princípios ágeis, do
 ### 3.1 Elicitação de Requisitos
 Atividade | Método | Ferramenta
 ----------|--------|-----------
+Brainstorming| nao sei scr| GoogleDocs
+
+
 
 ### 3.2 Análise de Requisitos
 Atividade | Método | Ferramenta
 ----------|--------|-----------
 
+
 ### 3.3 Documentação de Requisitos
 Atividade | Método | Ferramenta
 ----------|--------|-----------
+
 
 ### 3.4 Verificação e Validação de Requisitos
 Atividade | Método | Ferramenta
 ----------|--------|-----------
 
+
 ### 3.5 Gerenciamento de Requisitos 
 Atividade | Método | Ferramenta
 ----------|--------|-----------
 
+
 ## 4. Lições Aprendidas
-### 4.1 Unidade 1
-### 4.2 Unidade 2
-### 4.3 Unidade 3
-### 4.4 Unidade 4
-### 4.5 Unidade 5
+### 4.1 Unidade 1 - Ainda não concluido
+### 4.2 Unidade 2 - Ainda não concluido
+### 4.3 Unidade 3 - Ainda não concluido
+### 4.4 Unidade 4 - Ainda não concluido
+### 4.5 Unidade 5 - Ainda não concluido
 
 ## Referências Bibliográficas
 > Abran, A., Moore, J., Bourque, P. and Dupuis, R. (Eds) (2004) SWEBOK: Guide to the Software Engineering Body of Knowledge. IEEE Computer Society
