@@ -10,5 +10,9 @@ theme:
   icon:
     repo: fontawesome/brands/github
 
+extra_css:
+  - stylesheets/extra.css
+
 nav:
   - Inicio: index.md
+  - Documento Visão: DocVisao.md
