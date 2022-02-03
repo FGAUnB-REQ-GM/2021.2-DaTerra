@@ -10,8 +10,8 @@ theme:
   icon:
     repo: fontawesome/brands/github
 
-extra_css:
-  - stylesheets/extra.css
+# extra_css:
+#   - stylesheets/extra.css
 
 markdown_extensions:
   - def_list
@@ -20,7 +20,11 @@ markdown_extensions:
 
 nav:
   - Inicio: index.md
-  - Documento Visão: DocVisao.md
+  - Unidade 1:  
+    - Declaração do Problema: DocVisao.md
+    - Abordagem de Desenvolvimento de Software: 12.md
+    - Abordagem de engenharia de Requisitos: 13.md
+    - Lições Aprendidas: 14.md
   - Reuniões: reunioes.md
 
 plugins:

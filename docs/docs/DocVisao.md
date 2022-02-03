@@ -1,6 +1,3 @@
-## 1. Visão Geral do Produto
-### 1.1 Declaração do Problema
-
 #### O Problema
 <p style="text-align: justify">
 No Brasil, cerca de 77% dos estabelecimentos de produção agrícola se enquadram em pequenas propriedades rurais, que são mantidas em sua maioria por agricultores familiares. A agricultura familiar desses pequenos produtores é diretamente responsável por 10 milhões de postos de trabalho, ocupando 67% da atividade agropecuária total no país. Consequentemente, a grande maioria dos municípios têm como base econômica a agricultura familiar.
@@ -41,61 +38,10 @@ Que | Oferece uma espécie de feira virtual, onde o produtor e consumidor se con
 Ao contrário | Da concorrente Sumá
 Nosso produto | Oferecerá uma plataforma intuitiva e sem maiores burocracias.
 
-### 1.3 Objetivo do Produto
+### Objetivo do Produto
 
 Auxiliar pequenos e medios produtores rurais com a venda de produtos, para que assim eles possam expandir suas carteiras de clientes.<br>
 Aumentar a visibilidade no mercado de produtos adivindos desses produtores.
-
-
-## 2. Abordagem de Desenvolvimento de Software
-<p style="text-align: justify">
-Escolhemos a metodologia ágil Scrum como base para o nosso projeto.
-Utilizaremos os artefatos: product backlog, sprint backlog e um produto incremental possivelmente lançável.
-Realizaremos os eventos: sprint, sprint planning, daily scrum, sprint review e sprint retrospective.
-Ainda, utilizaremos a prática chave do XP Programming, a programação por pares (pair programming).
-Também utilizaremos um quadro Kanban, para acompanhamento dos backlogs.
-Também utilizaremos Lean Inception como ferramenta para alinhar o entendimento das áreas de negócio do produto entre a equipe.
-</p>
-
-
-## 3. Abordagem de engenharia de Requisitos 
-<p style="text-align: justify">
-A abordagem que será utilizada no projeto é baseada nos princípios ágeis, dos quais fixam recurso/orçamento e tempo, mas é flexível em definir requisitos. Decidimos utilizar essa abordagem visto que temos tempo e recursos limitados de desenvolvimento dado ao prazo pré-estabelecido da matéria e a pouca experiência dos membros do grupo com as tecnologias que serão utilizadas na solução.
-</p>
-
-### 3.1 Elicitação de Requisitos
-Atividade | Método | Ferramenta
-----------|--------|-----------
-Brainstorming| nao sei scr| GoogleDocs
-
-
-
-### 3.2 Análise de Requisitos
-Atividade | Método | Ferramenta
-----------|--------|-----------
-
-
-### 3.3 Documentação de Requisitos
-Atividade | Método | Ferramenta
-----------|--------|-----------
-
-
-### 3.4 Verificação e Validação de Requisitos
-Atividade | Método | Ferramenta
-----------|--------|-----------
-
-
-### 3.5 Gerenciamento de Requisitos 
-Atividade | Método | Ferramenta
-----------|--------|-----------
-
-
-## 4. Lições Aprendidas
-### 4.1 Unidade 1 - Ainda não concluido
-### 4.2 Unidade 2 - Ainda não concluido
-### 4.3 Unidade 3 - Ainda não concluido
-### 4.4 Unidade 4 - Ainda não concluido
-### 4.5 Unidade 5 - Ainda não concluido
 
 ## Referências Bibliográficas
 > Abran, A., Moore, J., Bourque, P. and Dupuis, R. (Eds) (2004) SWEBOK: Guide to the Software Engineering Body of Knowledge. IEEE Computer Society
@@ -108,5 +54,6 @@ Atividade | Método | Ferramenta
 -------|----------|-------------------|--------
 1.0    |27/01/2022|Criação do conteúdo| José Guilherme
 1.1    |02/02/2022|Adição do conteúdo | Mariana Rio
+1.2    |03/02/2022|Adição do conteúdo | Mariana Rio
 
 
