@@ -5,7 +5,8 @@ Disciplina: Requisitos de Software<br>
 Docente: George Marsicano 
 
 ## Resultados
-#### Entrega 03/02 - Unidade 1:
+#### Entrega 03/02 - Unidade 1: 
+![type:video](https://youtu.be/pl4H0MZbifA)
 
 ## Membros X-Force
 Integrantes|GitHub

@@ -22,3 +22,6 @@ nav:
   - Inicio: index.md
   - Documento Visão: DocVisao.md
   - Reuniões: reunioes.md
+
+plugins:
+  - mkdocs-video
