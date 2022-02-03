@@ -52,7 +52,7 @@ Aumentar a visibilidade no mercado de produtos adivindos desses produtores.
 
  Versão|Data      |Modificação        |Autor
 -------|----------|-------------------|--------
-1.0    |27/01/2022|Criação do conteúdo| José Guilherme
+1.0    |27/01/2022|Criação do conteúdo| José Guilherme, Cristian Furtado
 1.1    |02/02/2022|Adição do conteúdo | Mariana Rio
 1.2    |03/02/2022|Adição do conteúdo | Mariana Rio
 
