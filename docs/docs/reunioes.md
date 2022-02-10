@@ -32,4 +32,17 @@ Terminar de preencher o documento visão e fazer as correcoes solicitadas pelo p
 - [x] Terminar documento de visão
 - [x] Gravar video de apresentação
 
+## Reunião 4 - 10/02
+### Descrição
+Terminar de preencher o documento visão e fazer as correcoes solicitadas pelo professor novamente.
+
+### Objetivos
+- [x] Retirar adjetivos da declaração do problema
+- [x] Ajustar a declaração do produto (uma espécie de feira ou feira?)
+- [x] Consertar metodologia: não trás os fatores do Sommerville; apresenta XP e Lean Inception, mas não conecta o uso delas
+- [x] Consertar atividades de ER: as atividades de requisitos estão muito genéricas e não conectadas a metodologia proposta
+- [x] Apresentar lições aprendidas na unidade 1
+
+### Até proxima reunião
+- Gravar o video de apresentação
 
