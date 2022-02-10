@@ -62,5 +62,6 @@ Aumentar a visibilidade no mercado de produtos adivindos desses produtores.
 1.0    |27/01/2022|Criação do conteúdo| José Guilherme, Cristian Furtado
 1.1    |02/02/2022|Adição do conteúdo | Mariana Rio
 1.2    |03/02/2022|Adição do conteúdo | Mariana Rio
-1.3    |10/02/2022|Correções especificadas pelo professor: retirar adjetivos da declaração do problema e ajustar a declaração do produto. | José Guilherme
+1.3    |10/02/2022|Correções especificadas pelo professor | José Guilherme, Mariana Rio, Cristian Furtado
+
 
