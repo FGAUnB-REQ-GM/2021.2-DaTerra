@@ -1,0 +1,31 @@
+site_name: DaTerra
+repo_url: https://github.com/FGAUnB-REQ-GM/2021.2-DaTerra
+repo_name: ''
+
+theme:
+  name: material
+  language: 'pt'
+  logo: ''
+  favicon: ''
+  icon:
+    repo: fontawesome/brands/github
+
+# extra_css:
+#   - stylesheets/extra.css
+
+markdown_extensions:
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+nav:
+  - Inicio: index.md
+  - Unidade 1:  
+    - Declaração do Problema: DocVisao.md
+    - Abordagem de Desenvolvimento de Software: 12.md
+    - Abordagem de engenharia de Requisitos: 13.md
+    - Lições Aprendidas: 14.md
+  - Reuniões: reunioes.md
+
+plugins:
+  - mkdocs-video
