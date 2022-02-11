@@ -25,7 +25,9 @@ nav:
     - Abordagem de Desenvolvimento de Software: 12.md
     - Abordagem de engenharia de Requisitos: 13.md
     - Lições Aprendidas: 14.md
-  - Reuniões: reunioes.md
+  - Organização:
+    - Reuniões: reunioes.md
+    - Sprints: sprints.md
 
 plugins:
   - mkdocs-video

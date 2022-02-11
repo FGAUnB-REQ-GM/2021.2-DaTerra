@@ -1,10 +1,3 @@
-<span style="color:red">
- **Comentários Gerais**
-3) metodologia: não trás os fatores do Sommerville; apresenta XP e Lean Inception, mas não conecta o uso delas
-4) as atividades de requisitos estão muito genéricas e não conectadas a metodologia proposta
-5) não apresenta lições aprendidas na unidade 1
-</span>
-
 #### O Problema
 <p style="text-align: justify">
 No Brasil, cerca de 77% dos estabelecimentos de produção agrícola se enquadram em pequenas propriedades rurais, que são mantidas em sua maioria por agricultores familiares. A agricultura familiar desses pequenos produtores é diretamente responsável por 10 milhões de postos de trabalho, ocupando 67% da atividade agropecuária total no país. Consequentemente, a grande maioria dos municípios têm como base econômica a agricultura familiar.
