@@ -9,6 +9,8 @@ theme:
   favicon: ''
   icon:
     repo: fontawesome/brands/github
+  palette:
+    primary: green
 
 # extra_css:
 #   - stylesheets/extra.css
