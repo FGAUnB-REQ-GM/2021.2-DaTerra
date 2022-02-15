@@ -25,6 +25,13 @@ nav:
     - Abordagem de Desenvolvimento de Software: 12.md
     - Abordagem de engenharia de Requisitos: 13.md
     - Lições Aprendidas: 14.md
+  - Unidade 2:
+    - Requisitos Funcionais:
+      - Requisitos de Usuarios.md
+      - Requisitos do Sistema.md
+    - Requisitos Nao-Funcionais:
+      - Requistos.md
+
   - Organização:
     - Reuniões: reunioes.md
     - Sprints: sprints.md

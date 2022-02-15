@@ -17,9 +17,7 @@
 - [ ] Canvas MVP (disponível para o professor)
 - [ ] Vídeo de apresentação das entregas
 
-
 ## Sprint 3 - 17/03
-
 
 
 ## Sprint 4 - 07/04
