@@ -1,5 +1,5 @@
-## 4. Lições Aprendidas
-### 4.1 Unidade 1
+## Lições Aprendidas
+### Unidade 1
 <p style="text-align: justify"> Nesta unidade, vimos algumas das atividades de ER e quais técnicas exixtem em cada uma delas, como a atividade de Elicitação de Requisitos, onde podemos aplicar a técnica do Brainstorm por exemplo.
 </p>
 <p style="text-align: justify"> Revimos também algumas metodologias de processo de desenvolvimento de um software, seja o processo baseado na filosofia ágil (como o Scrum) que fixa o prazo e valor do produto ao invés dos requisitos do sistema, ou numa metodologia tradicional (como Cascata) que fixa os requisitos de um projeto, mas o tempo para concluí-lo e seu valor são variáveis.

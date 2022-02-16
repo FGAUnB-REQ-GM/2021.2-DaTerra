@@ -9,3 +9,10 @@
 <br>
 <img src="/img/Registro_de_Usuarios.jpg" width="660px">
 </p>
+
+
+## Versionamento
+
+ Versão|Data      |Modificação        |Autor
+-------|----------|-------------------|--------
+1.0    |15/01/2022|Criação da pagina| Cristian Furtado

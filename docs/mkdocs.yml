@@ -23,16 +23,13 @@ markdown_extensions:
 nav:
   - Inicio: index.md
   - Unidade 1:  
-    - Declaração do Problema: DocVisao.md
-    - Abordagem de Desenvolvimento de Software: 12.md
-    - Abordagem de engenharia de Requisitos: 13.md
-    - Lições Aprendidas: 14.md
+    - Declaração do Problema: DeclaracaoProblema.md
+    - Abordagem de Desenvolvimento de Software: AbordagemDev.md
+    - Abordagem de engenharia de Requisitos: AbordagemEngReq.md
+    - Lições Aprendidas: LicoesAprendidas.md
   - Unidade 2:
-    - Requisitos Funcionais:
-      - Requisitos de Usuarios.md
-      - Requisitos do Sistema.md
-    - Requisitos Nao-Funcionais:
-      - Requisitos.md
+    - Requisitos Funcionais: RequisitosF.md
+    - Requisitos Não-Funcionais: RequisitosNF.md
 
   - Organização:
     - Reuniões: reunioes.md

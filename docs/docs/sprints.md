@@ -24,3 +24,10 @@
 
 
 ## Sprint 5 - 28/04
+
+
+## Versionamento
+
+ Versão|Data      |Modificação        |Autor
+-------|----------|-------------------|--------
+1.0    |9/01/2022|Criação da pagina| Cristian Furtado

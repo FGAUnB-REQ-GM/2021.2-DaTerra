@@ -20,7 +20,7 @@ muitas vezes se encontram numa situação na qual não há empoderamento para qu
 É preciso trazer avanço tecnológico para os pequenos produtores. Isso pode ser feito através de um aplicativo web onde suas vendas poderiam ser realizadas diretamente para seus consumidores finais, eliminando o intermediário e portanto valorizando seus produtos, além de aumentar significativamente a visibilidade social da classe.
 </p>
 
-### 1.2 Declaração de Posição do Produto
+### Declaração de Posição do Produto
 <p style="text-align: justify">
 O aplicativo web DaTerra é um produto não-burocrático e intuitivo que tem como principal objetivo 	comercial conectar pequenos produtores e seus novos clientes: qualquer pessoa consumidora que deseje acessar a plataforma. O DaTerra funciona como um feirão virtual onde os produtores poderão 	cadastrar seus produtos,  realizar as suas vendas para consumidores e receberem 	avaliações.
 </p>
