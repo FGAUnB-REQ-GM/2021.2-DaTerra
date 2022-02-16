@@ -5,8 +5,8 @@ repo_name: ''
 theme:
   name: material
   language: 'pt'
-  logo: ''
-  favicon: ''
+  logo: 'img\logoprovisoria.png'
+  favicon: 'img\logoprovisoria.png'
   icon:
     repo: fontawesome/brands/github
   palette:
