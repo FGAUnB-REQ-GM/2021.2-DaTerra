@@ -26,7 +26,6 @@ nav:
     - Declaração do Problema: DeclaracaoProblema.md
     - Abordagem de Desenvolvimento de Software: AbordagemDev.md
     - Abordagem de engenharia de Requisitos: AbordagemEngReq.md
-    - Lições Aprendidas: LicoesAprendidas.md
   - Unidade 2:
     - Requisitos Funcionais: RequisitosF.md
     - Requisitos Não-Funcionais: RequisitosNF.md
@@ -34,6 +33,7 @@ nav:
   - Organização:
     - Reuniões: reunioes.md
     - Sprints: sprints.md
+  - Lições Aprendidas: LicoesAprendidas.md
 
 plugins:
   - mkdocs-video
