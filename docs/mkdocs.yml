@@ -11,7 +11,7 @@ theme:
     repo: fontawesome/brands/github
   palette:
     primary: green
-
+    
 # extra_css:
 #   - stylesheets/extra.css
 
@@ -26,14 +26,17 @@ nav:
     - Declaração do Problema: DeclaracaoProblema.md
     - Abordagem de Desenvolvimento de Software: AbordagemDev.md
     - Abordagem de engenharia de Requisitos: AbordagemEngReq.md
+    - Lições Aprendidas: LicoesAprendidas.md
   - Unidade 2:
-    - Requisitos Funcionais: RequisitosF.md
-    - Requisitos Não-Funcionais: RequisitosNF.md
+    - Requisitos Funcionais:
+      - Requisitos de Usuarios.md
+      - Requisitos do Sistema.md
+    - Requisitos Nao-Funcionais:
+      - Requisitos.md
 
   - Organização:
     - Reuniões: reunioes.md
     - Sprints: sprints.md
-  - Lições Aprendidas: LicoesAprendidas.md
 
 plugins:
   - mkdocs-video
