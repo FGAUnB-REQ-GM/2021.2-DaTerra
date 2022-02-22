@@ -1,4 +1,4 @@
-![](img/CanvasMVP.png)
+![](img/CanvasMVP.jpg)
 
 ## Versionamento
 
