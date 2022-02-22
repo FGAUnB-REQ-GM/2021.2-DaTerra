@@ -28,9 +28,8 @@ nav:
     - Abordagem de engenharia de Requisitos: AbordagemEngReq.md
     - Lições Aprendidas: LicoesAprendidas.md
   - Unidade 2:
-    - Requisitos Funcionais: RequisitosF.md
-      #- Requisitos do Sistema.md
-    - Requisitos Nao-Funcionais: RequisitosNF.md
+    - Requisitos: RequisitosF.md
+    - CanvasMVP: canvasmvp.md
   - Organização:
     - Reuniões: reunioes.md
     - Sprints: sprints.md
