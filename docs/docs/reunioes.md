@@ -62,6 +62,18 @@ Realizar a atividade de listagem de requisitos funcionais e não funcionais do n
 - Consertar formatação das histórias de usuário
 - Dar início a construção do MVP do projeto
 
+## Reunião 6 - 21/02
+### Descrição
+Realizar a atividade de criacao do kanbam, CanvasMVP e terminar listagem de requisitos.
+
+### Objetivos
+- [x] Finalizar requisitos
+- [x] Criar o Kanbam
+- [x] Criar CanvasMVP
+
+### Até proxima reunião:
+- Terminar de passar os requisitos para o ZenHub
+
 ## Versionamento
 
  Versão|Data      |Modificação        |Autor
@@ -71,3 +83,4 @@ Realizar a atividade de listagem de requisitos funcionais e não funcionais do n
 1.2    |02/01/2022|Adição de resultados da reuniao 3| José Guilherme, Mariana Rio
 1.3    |10/01/2022|Adição de resultados da reuniao 4| Cristian Furtado, José Guilherme
 1.4    |10/01/2022|Adição de resultados da reuniao 5| Cristian Furtado
+1.4    |22/02/2022|Adição de resultados da reuniao 6| Mariana Rio
