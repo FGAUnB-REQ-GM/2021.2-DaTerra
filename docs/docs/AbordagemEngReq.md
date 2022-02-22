@@ -20,19 +20,20 @@ Verificar os requisitos que podem ser implementados e classificá-los propriamen
 ### Documentação de Requisitos
 Atividade | Método | Ferramenta
 ----------|--------|-----------
-Anotar e deixar claro os requisitos aceitos| Linguagem natural |GoogleDocs, GitHub
-Registrar possíveis alterações em requisitos | Linguagem natural |GoogleDocs, GitHub
+Registrar os requisitos| Linguagem natural | ZenHub
+Registrar alterações em requisitos | Linguagem natural, versionamento | ZenHub
 
 ### Verificação e Validação de Requisitos
 Atividade | Método | Ferramenta
 ----------|--------|-----------
-Verificação	de possiveis erros em código| Programação em pares | Discord
-Fazer validação de requisitos | Walkthrough | Discord
+Validação via realização de testes caixa-preta, ao fim de cada sprint | Análise de valor limite e particionamento de equivalência | Discord, PyTest
+Reunião de inspeção estática de código, ao fim de cada sprint | Walkthrough | Discord, GitHub
+Reunião de inspeção estática de modelo, ao fim de cada sprint | Walkthrough | Discord, GitHub
 
 ### Gerenciamento de Requisitos 
 Atividade | Método | Ferramenta
 ----------|--------|-----------
-Classificar os requisitos por tags | Identificação e armazenagem | Miro, Discord
+Classificar os requisitos | Identificação e armazenagem | Miro, Discord
 Verificar de mudança de algum requisito (código, lógica ou dependência) | Rastreabilidade |Miro
 
 ## Referências Bibliográficas
@@ -47,6 +48,7 @@ Verificar de mudança de algum requisito (código, lógica ou dependência) | Ra
 1.0    |27/01/2022|Criação do conteúdo| José Guilherme
 1.1    |02/02/2022|Adição do conteúdo | Mariana Rio
 1.2    |03/02/2022|Adição de conteúdo | Cristian Furtado
+1.3    |22/02/2022|Alteração de conteúdo| José Guilherme
 
 
 

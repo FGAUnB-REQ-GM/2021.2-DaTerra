@@ -12,8 +12,8 @@ theme:
   palette:
     primary: green
     
-# extra_css:
-#   - stylesheets/extra.css
+extra_css:
+  - _extra/extra.css
 
 markdown_extensions:
   - def_list
@@ -21,22 +21,20 @@ markdown_extensions:
       custom_checkbox: true
 
 nav:
-  - Inicio: index.md
+  - Início: index.md
   - Unidade 1:  
     - Declaração do Problema: DeclaracaoProblema.md
     - Abordagem de Desenvolvimento de Software: AbordagemDev.md
     - Abordagem de engenharia de Requisitos: AbordagemEngReq.md
     - Lições Aprendidas: LicoesAprendidas.md
   - Unidade 2:
-    - Requisitos Funcionais:
-      - Requisitos de Usuarios.md
-      - Requisitos do Sistema.md
-    - Requisitos Nao-Funcionais:
-      - Requisitos.md
-
+    - Requisitos Funcionais: RequisitosF.md
+      #- Requisitos do Sistema.md
+    - Requisitos Nao-Funcionais: RequisitosNF.md
   - Organização:
     - Reuniões: reunioes.md
     - Sprints: sprints.md
+  - Resultados: resultados.md
 
 plugins:
   - mkdocs-video

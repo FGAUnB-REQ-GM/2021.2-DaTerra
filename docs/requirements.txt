@@ -13,3 +13,5 @@ PyYAML==6.0
 pyyaml_env_tag==0.1
 six==1.16.0
 watchdog==2.1.6
+mkdocs-material
+mkdocs-video
