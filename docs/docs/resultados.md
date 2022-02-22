@@ -13,7 +13,7 @@ Artefatos a serem entregues:
 
 2. **Canvas MVP**:
 
-    O canvas MVP foi construído a partir do MIRO, e pode ser acessado <a>**clicando aqui**</a>, ou na aba Canvas MVP na seção Unidade 2 desta documentação.
+    O canvas MVP foi construído a partir do MIRO, e pode ser acessado <a href="https://fgaunb-req-gm.github.io/2021.2-DaTerra/canvasmvp/">**clicando aqui**</a>, ou na aba Canvas MVP na seção Unidade 2 desta documentação.
 
 3. **Vídeo de Apresentação da Entrega**:
 
