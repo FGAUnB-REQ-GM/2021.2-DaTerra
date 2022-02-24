@@ -1,4 +1,4 @@
-![](img/CanvasMVP.jpg)
+![](img/CanvasMVP2.jpg)
 
 Link para acesso do nosso [Miro](https://miro.com/welcomeonboard/cE9neFl0aEt5Tk9sUUVaZzlyWnU4UHVjQ04wSDZSdWluNmJiendWRnE2SDR4NlNoemo0aDFscFEyRDQ4c2daZXwzMDc0NDU3MzUwNjM3NTAyODQ2?invite_link_id=819555062367)
 
