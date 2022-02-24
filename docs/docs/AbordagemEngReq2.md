@@ -45,4 +45,4 @@ Verificar de mudança de algum requisito (código, lógica ou dependência) | Ra
 
  Versão|Data      |Modificação        |Autor
 -------|----------|-------------------|--------
-1.0    |24/03/2022|Criação da página| Mariana Rio
+1.0    |24/02/2022|Criação da página| Mariana Rio
