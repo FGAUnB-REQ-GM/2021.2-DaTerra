@@ -28,11 +28,14 @@ nav:
     - Abordagem de engenharia de Requisitos: AbordagemEngReq.md
     - Lições Aprendidas: LicoesAprendidas.md
   - Unidade 2:
-    - Requisitos: RequisitosF.md
-    - Canvas MVP: canvasmvp.md
-    - Personas: personasunidade2.md
-    - Atualização da Abordagem: AbordagemEngReq2.md
+    - Visão Geral do Produto:
+      - Requisitos: RequisitosF.md
+      - Personas: personasunidade2.md
+      - Canvas MVP: canvasmvp.md
+    - Engenharia de Requisitos: AbordagemEngReq2.md
     - Visão Geral do Projeto: Vsprojeto.md
+    - Lições Aprendidas: licoesunidade2.md
+
   - Organização:
     - Reuniões: reunioes.md
     - Sprints: sprints.md
