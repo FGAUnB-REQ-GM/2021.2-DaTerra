@@ -37,26 +37,28 @@ Elas são: Django, como framework Python robusto e escalável, que possuirá int
 - PRIORIDADE: CRÍTICA
 - AUTOR: [PO] José Guilherme
 
-
 ## Requisitos Funcionais
 
 ###  Epics
 
 #### E01: Registro de Usuários
 ##### Features:
--RF01: O produtor se registra na plataforma
+
+- RF01: O produtor se registra na plataforma
     - S01: O produtor envia suas informações pessoais e de contato
     - S02: O produtor envia as informações da sua fazenda
-    RF02: O cliente se registra na plataforma
+- RF02: O cliente se registra na plataforma
     - S03: O cliente envia suas informações pessoais e de contato
 
 #### E02: Acesso de Usuários
 ##### Features:
+
 - RF03: Usuário realiza login na plataforma
     - S04: O usuário informa CPF e senha
 
 #### E03: Gerenciamento de Produtos
 ##### Features:
+
 - RF04: O produtor cadastra um produto
     - S05: O produtor submete os dados fundamentais do produto
     - S06: O produtor submete os dados de disponibilidade do produto
@@ -66,6 +68,7 @@ Elas são: Django, como framework Python robusto e escalável, que possuirá int
 
 #### E04: Busca por Produtos e Produtores
 ##### Features:
+
 - RF06: Os usuários realizam uma busca por produtos na plataforma
     - S09: O usuário especifica um termo textual ou de categoria para a pesquisa de produto
 - RF07: Os usuários realizam uma busca por produtores na plataforma
@@ -73,6 +76,7 @@ Elas são: Django, como framework Python robusto e escalável, que possuirá int
 
 #### E05: Venda de Produtos
 ##### Features:
+
 -  RF08: O cliente poderá realizar um pedido
     - S11: O usuário visualiza as informações fundamentais e de disponibilidade do produto
 - RF09: O cliente poderá acessar o status do pedido
@@ -82,6 +86,7 @@ Elas são: Django, como framework Python robusto e escalável, que possuirá int
 
 #### E06: Páginas de Feedback
 ##### Features:
+
 - RF11: Os usuários podem acessar a página de cada produto na plataforma
     - S14: O cliente precisa informar uma quantidade disponível para o produto
     - S15: O produtor informa se aceita ou não a reserva do pedido
