@@ -104,3 +104,4 @@ Os requisitos podem ser encontrados no nosso [ZenHub](https://app.zenhub.com/wor
  Versão|Data      |Modificação        |Autor
 -------|----------|-------------------|--------
 1.0    |22/02/2022|Criação da pagina| Mariana Rio
+1.1    |15/03/2022|Adição de conteudo| Mariana Rio
