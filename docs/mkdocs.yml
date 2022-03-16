@@ -35,6 +35,11 @@ nav:
     - Engenharia de Requisitos: AbordagemEngReq2.md
     - Visão Geral do Projeto: Vsprojeto.md
     - Lições Aprendidas: licoesunidade2.md
+  - Unidade 3:
+    - Visão Geral do Produto:
+      - PBB: pbb.md
+      - Histórias de Usuário: pbb_historias.md
+      - BDD: bdd.md
   - Organização:
     - Reuniões: reunioes.md
     - Sprints: sprints.md
