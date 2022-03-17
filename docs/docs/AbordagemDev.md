@@ -1,7 +1,6 @@
 ## Abordagem de Desenvolvimento de Software
 ### Metodologia ágil
 #### Scrum
-![](img/Scrum1.png)
 
 <p style="text-align: justify">
 Escolhemos a metodologia ágil Scrum como base para o nosso projeto.
@@ -16,10 +15,13 @@ Também utilizaremos um quadro Kanban, para acompanhamento dos backlogs.
 Também utilizaremos Lean Inception como ferramenta para alinhar o entendimento das áreas de negócio do produto entre a equipe.
 </p>
 
-<p style="text-align: center">
-<img src="/img/LeanInception1.png" width="200px">
-<img src="/img/XP1.png" width="200px">
-</p>
+<p style="text-align: center">Lean Inception</p> 
+
+![](img/LeanInception1.png) 
+
+<p style="text-align: center">XP</p> 
+
+![](img/XP1.png)
 
 <p style="text-align: justify">
 
