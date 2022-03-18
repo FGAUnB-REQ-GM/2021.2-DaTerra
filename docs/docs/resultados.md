@@ -22,3 +22,7 @@ Artefatos a serem entregues:
 4. **Visão do Produto e Projeto (ATUALIZADOS)**:
 
     O documento de visão do produto está devidamente atualizado, de acordo com os artefatos produzidos nesta unidade da disciplina, que incluem **backlog do produto, organizado de acordo com a estrutura SAFe** e ainda, mudanças gerais no documento como um todo, com atualizações em tópicos como **abordagem de engenharia de requisitos**.
+
+#### Entrega - UNIDADE 3:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2b4Zdng5daE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
