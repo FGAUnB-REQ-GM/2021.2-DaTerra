@@ -1,0 +1,36 @@
+version: '3.7'
+
+services:
+  db:
+    container_name: daterra_postgresdb
+    image: postgis/postgis:14-master
+    restart: always
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: daterra_admin
+      POSTGRES_DB: daterra
+      POSTGRES_PASSWORD: daterra_postgres_password
+      POSTGRES_HOST_AUTH_METHOD: scram-sha-256
+  website:
+    container_name: daterra_website
+    restart: always
+    build:
+      context: ./daterra
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./daterra/:/usr/src/daterra
+      - static_volume:/usr/src/daterra/static
+      - media_volume:/usr/src/daterra/media
+    depends_on:
+      - db
+    command: "python manage.py runserver 0.0.0.0:8000"
+
+# Define all data volumes:
+volumes:
+  pgdata:
+  static_volume:
+  media_volume:
