@@ -5,7 +5,7 @@ Papel  |Atribuições|Responsáveis
 -------|-----------|------------
 Scrum Master| Scrum Master é o responsável por orientar a equipe durante o desenvolvimento do projeto.| José Guilherme
 Dono do Produto| Dono do Produto é o quem representa os interesses de todos e é quem defini os criterios de aceitação das histórias de usuário alem de funcionalidades do produto. | Mariana Rio e José Guilherme
-Desenvolvedor| Desenvolvedor é o responsável pelo processo de codificação do produto.| Mariana Rio e José Guilherme
+Desenvolvedor| Desenvolvedor é o responsável pelo processo de codificação do produto.| Felipe Agustini, Henrique Hida, José Guilherme e Mariana Rio.
 
 ## Planejamento das Fases e/ou Iterações do Projeto
 
