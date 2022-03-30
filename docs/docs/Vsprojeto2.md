@@ -23,6 +23,7 @@ Sprint 9|E03: Gerenciamento de Produtos e E04: Busca por Produtos e Produtores|7
 Sprint 10|E05: Venda de Produtos|14/04/2022|21/04/2022
 Sprint 11|E06: Páginas de Feedback|21/04/2022|28/04/2022
 
+
 ## Matriz de Comunicação
 Descrição|Envolvidos|Periodicidade|Resultados
 ---------|----------|-------------|----------
