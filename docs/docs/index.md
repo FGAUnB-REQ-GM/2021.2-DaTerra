@@ -51,4 +51,33 @@ A Equipe está dividida em dois membros, que atuaram no desenvolvimento completo
             <a href="https://github.com/MarianaPRio" target="_blank">@MarianaPRio</a>
         </td>
     </tr>
+    <tr>
+        <td>
+            <img src="https://github.com/HenriqueHida.png" alt="drawing" style="width: 100px;border-radius: 50%;"/>
+        </td>
+        <td style="padding-top: 50px;">
+            Henrique Hida
+        </td>
+        <td style="padding-top: 50px;">
+            18/0113569
+        </td>
+        <td style="padding-top: 50px;">
+            <a href="https://github.com/HenriqueHida" target="_blank">@HenriqueHida</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img src="https://github.com/Fealps.png" alt="drawing" style="width: 100px;border-radius: 50%;"/>
+        </td>
+        <td style="padding-top: 50px;">
+            Felipe Agustini
+        </td>
+        <td style="padding-top: 50px;">
+            18/0119818
+        </td>
+        <td style="padding-top: 50px;">
+            <a href="https://github.com/Fealps" target="_blank">@Fealps</a>
+        </td>
+    </tr>
+    <tr>
 </table>
