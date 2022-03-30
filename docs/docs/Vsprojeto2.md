@@ -14,16 +14,13 @@ Sprint |Produto(Entrega)|Data Início|Data Fim
 Sprint 1| Entrega Unidade 1 | 18/01/2022| 05/02/2022
 Sprint 2| Correções da entrega |  05/20/2022| 07/02/2022
 Sprint 3| Entrega Unidade 2 |  07/02/2022| 24/02/2022
-Sprint 4| Correções da entrega |  24/0/2022| 08/03/2022
+Sprint 4| Correções da entrega |  24/02/2022| 08/03/2022
 Sprint 5| Construção do PBB e Backlog|  08/03/2022| 15/03/2022
-Sprint 6| Prototipo de baixa fidelidade| 29/03/2022|31/03/2022
-Sprint 7| Prototipo alta fidelidade|31/03/2022|7/04/2022
-Sprint 8| E01: Registro de Usuários e E02: Acesso de Usuários|31/03/2022|7/04/2022
-Sprint 9| Prototipo de baixa fidelidade| 7/04/2022|11/03/2022
-Sprint 10| Prototipo alta fidelidade|11/03/2022|14/04/2022
-Sprint 11|E03: Gerenciamento de Produtos e E04: Busca por Produtos e Produtores |14/04/2022|21/04/2022
-Sprint 12|E05: Venda de Produtos e E06: Páginas de Feedback| 21/04/2022|28/04/2022
-
+Sprint 6| Prototipo de baixa fidelidade e alta fidelidade| 29/03/2022| 05/04/2022
+Sprint 8| E01: Registro de Usuários e E02: Acesso de Usuários| 05/04/2022|12/04/2022
+Sprint 9| E03: Gerenciamento de Produtos e E04: Busca por Produtos e Produtores| 12/04/2022|19/04/2022
+Sprint 10| Venda de Produtos e E06: Páginas de Feedback|19/04/2022|26/04/2022
+Finalização| Gravação do video |26/04/2022|28/04/2022
 
 ## Matriz de Comunicação
 Descrição|Envolvidos|Periodicidade|Resultados
