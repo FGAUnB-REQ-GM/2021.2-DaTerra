@@ -42,6 +42,7 @@ nav:
       - BDD: bdd.md
   - Unidade 4:
     - Visão Geral do Projeto: Vsprojeto2.md
+    - User Story Map: mapaHistorias.md
   - Resultados: resultados.md
 
 plugins:
