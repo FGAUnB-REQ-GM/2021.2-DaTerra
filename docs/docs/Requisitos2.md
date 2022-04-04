@@ -45,11 +45,11 @@ Elas são: Django, como framework Python robusto e escalável, que possuirá int
 ##### Features:
 
 - RF01: O produtor se registra na plataforma
-    - S01: O usuário a conta tipo produtor
+    - S01: O usuário seleciona a conta tipo produtor
     - S02: O produtor envia suas informações pessoais e de contato
     - S03: O produtor envia as informações da sua fazenda
 - RF02: O cliente se registra na plataforma
-    - S04: O usuário a conta tipo cliente
+    - S04: O usuário seleciona a conta tipo cliente
     - S05: O cliente envia suas informações pessoais e de contato
 
 #### E02: Acesso de Usuários

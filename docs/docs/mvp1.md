@@ -4,7 +4,7 @@
 ##### Features:
 
 - RF01: O produtor se registra na plataforma
-    - S01: O usuário a conta tipo produtor
+    - S01: O usuário seleciona a conta tipo produtor
     ![](img/tipo_conta.jpeg)
 
     - S02: O produtor envia suas informações pessoais e de contato
@@ -14,7 +14,7 @@
     ![](img/cadastro_fazenda.jpeg)
 
 - RF02: O cliente se registra na plataforma
-    - S05: O usuário a conta tipo cliente
+    - S05: O usuário seleciona a conta tipo cliente
     ![](img/tipo_conta.jpeg)
 
     - S04: O cliente envia suas informações pessoais e de contato
