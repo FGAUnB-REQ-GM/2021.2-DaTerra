@@ -1,20 +1,26 @@
 import React from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import { BrowserRouter as Router} from "react-router-dom";
+import { BrowserRouter as Router,Routes,Route} from "react-router-dom";
 
-import Login from "./components/login.component";
-//import SignUp from "./components/signup.component";
+import Login from "./components/Login/login.component";
+import SignUp from "./components/signup.component";
+import UserChoice from "./components/userchoice.component"
 
 function App() {
-  return (<Router>
-    <div className="App">
-      <div className="outer">
-        <div className="inner">
-            <Login/>
+  return (
+    <Router>
+      <div className="App">
+        <div className="outer">
+            <Routes>
+              <Route exact={true} path='/' element={<Login/>} />
+              <Route path="/signin" element={<Login/>} />
+              <Route path="/choice" element={<UserChoice/>} />
+              <Route path="/signup" element={<SignUp/>} />
+            </Routes>
         </div>
       </div>
-    </div></Router>
+    </Router>
   );
 }
 

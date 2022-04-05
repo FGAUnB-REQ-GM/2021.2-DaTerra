@@ -1,4 +1,8 @@
 import React from 'react'
 import logo from './../assets/images/logo.png'
-
-export default () => <img className="form-image" src={logo} alt=""/>
+const logovar = () => {
+    return(
+        <img className="form-image" src={logo} alt=""/>
+    );
+}
+export default (logovar);
