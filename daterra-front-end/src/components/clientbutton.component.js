@@ -5,7 +5,7 @@ const logovar = () => {
     return(
         <div className="btn-choice">
             <a href="/signup">
-                <input type="image" className="form-image" src={logo} alt=""/>
+                <input type="image" className="form-image image-client" src={logo} alt=""/>
             </a>
         </div>
     );

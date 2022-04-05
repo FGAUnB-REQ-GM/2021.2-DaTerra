@@ -41,6 +41,9 @@ body, html, .App, #root, .outer {
 .inner-register {
   padding: 2em 5em 2em 3em;
 }
+.inner-farm{
+  padding: 2em 7em 2em 3em;
+}
 .inner-choice {
   padding: 2em 4em 2em 3em;
 }

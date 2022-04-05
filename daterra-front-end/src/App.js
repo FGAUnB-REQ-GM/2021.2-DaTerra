@@ -5,7 +5,8 @@ import { BrowserRouter as Router,Routes,Route} from "react-router-dom";
 
 import Login from "./components/Login/login.component";
 import SignUp from "./components/signup.component";
-import UserChoice from "./components/userchoice.component"
+import UserChoice from "./components/userchoice.component";
+import FarmRegister from "./components/farmregister.component";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
               <Route path="/signin" element={<Login/>} />
               <Route path="/choice" element={<UserChoice/>} />
               <Route path="/signup" element={<SignUp/>} />
+              <Route path="/signup/farm" element={<FarmRegister/>} />
             </Routes>
         </div>
       </div>

@@ -95,15 +95,27 @@
   position: flex;
   display: inline-block;
 }
+.image-client{
+  padding: 15px;
+  border: 0;
+}
 .form-title{
   display: inline-flex;
   white-space: nowrap;
 }
 .form-begin-register{
   padding-top: 12%;
+  padding-left: 15%;
   padding-bottom: 1%;
   color: #282c34;
 }
+.form-begin-farm{
+  padding-top: 12%;
+  padding-left: 15%;
+  padding-bottom: 5%;
+  color: #282c34;
+}
+
 .form-begin-choice{
   padding-top: 8%;
   padding-bottom: 20%;
@@ -111,6 +123,11 @@
 .form-btn-register{
   align-items: center;
   padding-left: 35%;
+  padding-top: 0%;
+}
+.form-btn-picture{
+  height: 3em;
+  padding-left: 70%;
   padding-top: 0%;
 }
 .btn {
@@ -121,6 +138,10 @@
 }
 .btn:hover{
   background-color: #24572c;
+}
+.btn-picture{
+  font-size: 12px!important;
+  padding-top: 8px;
 }
 
 .btn-choice{
