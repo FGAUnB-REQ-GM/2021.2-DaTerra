@@ -18,6 +18,90 @@
   color: white;
 }
 
+.register-text{
+  color: #6C7458;
+  padding-top: 10%;
+}
+.register-text a{
+  color: #87BE00;
+}
+.register-text a:hover{
+  color: #24572c;
+}
+
 .App-link {
-  color: #61dafb;
+  color: #24572c;
+}
+.container {
+  background-color: #84E96B;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #24572c;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.form-btn{
+  align-items: center;
+  padding-left: 40%;
+  padding-top: 8%;
+}
+
+.form-login{
+  align-content: center;
+}
+.form-begin{
+  padding-top: 20%;
+  padding-bottom: 30%;
+}
+.form-image{
+  max-width: 30%;
+  position: flex;
+  display: inline-block;
+}
+.form-title{
+  display: inline-flex;
+}
+.btn {
+  background-color: #87BE00;
+  border: none;
+  align-items: center;
+  align-self: center;
+}
+.btn:hover{
+  background-color: #24572c;
 }
