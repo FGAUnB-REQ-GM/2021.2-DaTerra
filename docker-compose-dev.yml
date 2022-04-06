@@ -3,7 +3,7 @@ version: '3.7'
 services:
   db:
     container_name: daterra_postgresdb
-    image: postgis/postgis:14-master
+    image: postgres:14.1-alpine
     restart: always
     ports:
       - "5432:5432"
