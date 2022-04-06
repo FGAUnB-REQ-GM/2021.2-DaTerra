@@ -23,8 +23,6 @@ services:
       - "8000:8000"
     volumes:
       - ./daterra/:/usr/src/daterra
-      - static_volume:/usr/src/daterra/static
-      - media_volume:/usr/src/daterra/media
     depends_on:
       - db
     command: "python manage.py runserver 0.0.0.0:8000"
@@ -32,5 +30,3 @@ services:
 # Define all data volumes:
 volumes:
   pgdata:
-  static_volume:
-  media_volume:
