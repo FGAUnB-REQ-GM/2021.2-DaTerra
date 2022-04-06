@@ -1,0 +1,24 @@
+homepage!!
+<hr>
+
+<br><br>
+
+<a href="{% url 'login' %}">login aqui</a>
+<br><br>
+
+<a href="{% url 'registro' %}">registro aqui</a>
+
+<br><br>
+
+
+<hr>
+
+{% if user.is_authenticated %}
+  Olá {{ user.complete_name }}, vc está logado!
+  <br>
+  faça logout <a href="{% url 'logout' %}">clicando aqui</a>
+
+{% else %}
+  <p>vc não está logado.</p>
+{% endif %}
+
