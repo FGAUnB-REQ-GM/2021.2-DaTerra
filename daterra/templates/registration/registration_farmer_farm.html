@@ -1,0 +1,49 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="inner inner-farm">
+    <div class="form">
+        <form method="post" action="{% url 'registration_farmer_farm' %}" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="form-title d-flex justify-content-center align-items-center">
+                    <img class="form-image me-4" src="{% static 'images/logo.png' %}" alt=""/>
+                    <h2>
+                        Cadastre sua fazenda
+                    </h2>
+            </div>
+            <div class="form-begin-farm">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="name" maxlength="255" required id="id_name" placeholder="Nome da fazenda" />
+                </div>
+                <br/>
+                <div class="form-group">
+                    <input type="file" name="picture" accept="image/*" required id="id_picture" class="form-control" placeholder="Foto" />
+                </div>
+                <br/>
+                <div class="form-group">
+                    <input type="text" name="address" maxlength="255" required id="id_address" class="form-control" placeholder="Endereço" />
+                </div>
+                <br/>                    
+                <div class="form-group">
+                    <input type="text" name="cep" maxlength="12" required id="id_cep" class="form-control" placeholder="CEP" />
+                </div>
+                <br/>
+                <div class="form-group">
+                    <input type="text" name="city" maxlength="255" required id="id_city" class="form-control" placeholder="Cidade" />
+                </div>
+                <br/>
+                <div class="form-group">
+                    <select name="state" id="id_state" class="form-control" placeholder="Estado">
+                        <option value="DF" selected>Distrito Federal</option>
+                        <option value="SP">São Paulo</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-btn-register">
+                <button type="submit" class="btn btn-dark btn-lg btn-block">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock content %}

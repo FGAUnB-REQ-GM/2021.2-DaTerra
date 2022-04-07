@@ -1,22 +1,11 @@
+{% extends 'pages/base.html' %}
 {% load static %}
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
-          rel="stylesheet" 
-          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'css/App.css' %}" />
-  </head>
-  <body>
+{% block content %}
     <div class="outer">
     <div class="inner inner-login">
       <div class="form">
-          <form method="POST">
+          <form method="POST" action="{% url 'login' %}">
             {% csrf_token %}
               <div class="form-title">
                   <img class="form-image" src="{% static 'images/logo.png' %}">
@@ -33,7 +22,7 @@
                       <input type="password" name="password" id="id_password" class="form-control" placeholder="Insira sua senha" />
                   </div>                
                   <p class="forgot-password text-right">
-                      <a href="http://google.com">esqueci minha senha</a>
+                      <a href="#">esqueci minha senha</a>
                   </p>
               </div>
               <div class="form-btn">
@@ -41,18 +30,9 @@
               </div>
           </form>
           <p class="register-text text-center">
-              Ainda não é cliente? <a href="/choice">Registre-se</a>
+              Ainda não é cliente? <a href="{% url 'user_choice' %}">Registre-se</a>
           </p>
-          {% if user.is_authenticated %}
-  Olá {{ user.complete_name }}, vc está logado!
-  <br>
-  faça logout <a href="{% url 'logout' %}">clicando aqui</a>
-
-{% else %}
-  <p>vc não está logado.</p>
-{% endif %}
       </div>
     </div>
   </div>
-  </body>
-  </html>
+{% endblock content %}
