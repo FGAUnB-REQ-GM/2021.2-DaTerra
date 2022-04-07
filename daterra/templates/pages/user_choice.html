@@ -1,0 +1,41 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="inner inner-choice">
+    <div class="form">
+        <div class="form-begin-choice">
+            <div class="form-title">
+                <Logo/>
+                <h2 class="h2-choice">
+                    Selecione o tipo de conta que deseja criar
+                </h2>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <div class="btn-duo">
+                <div class="btn-tag">
+                    <div class="btn-choice">
+                        <a href="{% url 'registration' %}">
+                            <input type="image" class="form-image image-client" src="{% static 'images/buyer.png'%}" alt=""/>
+                        </a>
+                    </div>
+                    <label> Cliente </label>
+                </div>
+                <div class="btn-tag">
+                    <div class="vl"></div>
+                </div>
+                <div class="btn-tag">
+                    <div class="btn-choice">
+                        <a href="{% url 'registration_farmer' %}">
+                            <input type="image" class="form-image" src="{% static 'images/farm.png'%}" alt=""/>
+                        </a>
+                    </div>
+                    <label> Produtor </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
