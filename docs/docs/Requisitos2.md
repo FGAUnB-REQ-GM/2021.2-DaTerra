@@ -41,65 +41,47 @@ Elas são: Django, como framework Python robusto e escalável, que possuirá int
 
 ###  Epics
 
-#### E01: Registro de Usuários
+#### E01: Criação de usuário
 ##### Features:
 
-- RF01: O produtor se registra na plataforma
-    - S01: O usuário seleciona a conta tipo produtor
-    - S02: O produtor envia suas informações pessoais e de contato
-    - S03: O produtor envia as informações da sua fazenda
-- RF02: O cliente se registra na plataforma
-    - S04: O usuário seleciona a conta tipo cliente
-    - S05: O cliente envia suas informações pessoais e de contato
+- RF01: Escolha de conta
+    - S01: Eu como produtor desejo escolher a conta tipo produtor, para realizar um cadastro de produtor
+    - S02: Eu como cliente desejo escolher a conta tipo cliente, para realizar um cadastro de cliente
+- RF02: Criação de contas
+    - S03: Eu como produtor desejo me cadastrar na plataforma para criar minha conta
+    - S04: Eu como Cliente desejo me cadastrar na plataforma para criar minha conta
+- RF03: Registro de fazenda
+    - S05: Eu como produtor desejo cadastrar a minha fazenda na plataforma para finalizar minha conta
+
 
 #### E02: Acesso de Usuários
 ##### Features:
 
-- RF03: Usuário realiza login na plataforma
-    - S06: O usuário informa CPF e senha
+- RF04: Acesso de conta
+    - S06: Eu como produtor desejo acessar o site pela minha conta para anunciar meus produtos
+    - S07: Eu como cliente desejo acessar o site pela minha conta para comprar produtos
+- RF05: Edição de conta
+    - S08: Eu como usuário desejo editar minha conta para alterar meus dados
 
-#### E03: Gerenciamento de Produtos
+#### E03: Venda de produtos
 ##### Features:
 
-- RF04: O produtor cadastra um produto
-    - S07: O produtor submete os dados fundamentais do produto
-    - S08: O produtor submete os dados de disponibilidade do produto
-- RF05: O produtor atualiza os dados de um produto
-    - S09: O produtor submete dados fundamentais atualizados do produto
-    - S10: O produtor submete dados de disponibilidade atualizados do produto
+- RF06: Acesso a pagina de anuncio de produtor
+    - S09: Eu como produtor desejo  anunciar meus produtos para vender meus produtos
+    - S10: Eu como produtor desejo analisar minhas vendas para organizar meu estoque
+- RF07: Os cliente podem acessar a página de cada produto na plataforma
+    - S11: Eu como cliente desejo buscar produtores para encontrar produtos
+    - S12: Eu como cliente desejo colocar produtos no carrinho para poder comprá-los
+    - S13: Eu como cliente desejo combinar a entrega com o produtor para receber o produto
 
-#### E04: Busca por Produtos e Produtores
+#### E04: Páginas de Feedback
 ##### Features:
 
-- RF06: Os usuários realizam uma busca por produtos na plataforma
-    - S11: O usuário especifica um termo textual ou de categoria para a pesquisa de produto
-- RF07: Os usuários realizam uma busca por produtores na plataforma
-    - S12: O usuário especifica um termo textual ou de categoria para a pesquisa de produtores
-
-#### E05: Venda de Produtos
-##### Features:
-
--  RF08: O cliente poderá realizar um pedido
-    - S13: O usuário visualiza as informações fundamentais e de disponibilidade do produto
-- RF09: O cliente poderá acessar o status do pedido
-    - S14: O usuário acessa as informações fundamentais do produtor e de cada produto cadastrado na página do produtor
-- RF10: A compra é finalizada
-    - S15: O produtor acessa as informações fundamentais do cliente
-
-#### E06: Páginas de Feedback
-##### Features:
-
-- RF11: Os usuários podem acessar a página de cada produto na plataforma
-    - S16: O cliente precisa informar uma quantidade disponível para o produto
-    - S17: O produtor informa se aceita ou não a reserva do pedido
-- RF12: Os usuários podem acessar a página de cada produtor na plataforma
-    - S18: O cliente e o produtor recebem os dados de comunicação de ambas as partes para acertar detalhes da entrega
-- RF13: O produtor pode acessar a página de cada cliente que solicitar um pedido
-    - S19: O produtor informa se a compra já foi finalizada ou não
-    - S20: O produtor realiza a avaliação do cliente
-    - S21: O cliente realiza a avaliação do pedido
-
-Os requisitos podem ser encontrados no nosso [ZenHub](https://app.zenhub.com/workspaces/produto-6214e609e5734f00196404e2/board?invite=true)
+- RF08: O produtor pode acessar a página de cada cliente que solicitar um pedido
+    - S14: Eu como produtor desejo acessar a pagina do cliente para avalia-lo
+- RF09: Os usuários podem acessar a página de cada produtor na plataforma
+    - S15: Eu como cliente desejo avaliar o produto para dar feedback
+    - S16: Eu como cliente desejo avaliar o produtor para dar feedback
 
 ## Versionamento
 
@@ -107,3 +89,4 @@ Os requisitos podem ser encontrados no nosso [ZenHub](https://app.zenhub.com/wor
 -------|----------|-------------------|--------
 1.0    |04/04/2022|Criação da pagina| Mariana Rio
 1.1    |04/04/2022|Alteração do conteudo| Mariana Rio
+1.2    |07/04/2022|Alteração do conteudo| Mariana Rio

@@ -17,9 +17,9 @@ Sprint 3| Entrega Unidade 2 |  07/02/2022| 24/02/2022
 Sprint 4| Correções da entrega |  24/02/2022| 08/03/2022
 Sprint 5| Construção do PBB e Backlog|  08/03/2022| 15/03/2022
 Sprint 6| Prototipo de baixa fidelidade e alta fidelidade| 29/03/2022| 05/04/2022
-Sprint 8| E01: Registro de Usuários e E02: Acesso de Usuários| 05/04/2022|12/04/2022
-Sprint 9| E03: Gerenciamento de Produtos e E04: Busca por Produtos e Produtores| 12/04/2022|19/04/2022
-Sprint 10| Venda de Produtos e E06: Páginas de Feedback|19/04/2022|26/04/2022
+Sprint 8|E01: Criação de usuário e E02: Acesso de Usuários| 05/04/2022|12/04/2022
+Sprint 9| E03: Venda de produtos| 12/04/2022|19/04/2022
+Sprint 10|E04: Páginas de Feedback|19/04/2022|26/04/2022
 Finalização| Gravação do video |26/04/2022|28/04/2022
 
 ## Matriz de Comunicação
