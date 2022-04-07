@@ -10,3 +10,4 @@ Link para o nosso <a href="https://miro.com/welcomeonboard/dUtzaTVqY2FVMzFSR3ZIY
  Versão|Data      |Modificação        |Autor
 -------|----------|-------------------|--------
 1.0    |04/04/2022|Criação da página  |Mariana Rio
+1.1    |07/04/2022|Alteração da página  |Mariana Rio
