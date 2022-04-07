@@ -36,6 +36,11 @@ STATE_CHOICES = (
     ('SP', 'são paulo'),
 )
 
+USER_TYPE_CHOICES = (
+    ('cliente', 'CLIENTE'),
+    ('produtor', 'PRODUTOR'),
+)
+
 
 
 class User(AbstractBaseUser, PermissionsMixin):
@@ -46,6 +51,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     cellphone = models.CharField(_('cellphone'), max_length=30)
     city = models.CharField(_('city'), max_length=255, default='não informado')
     state = models.CharField(max_length=255, choices=STATE_CHOICES, default='DF')
+    user_type = models.CharField(max_length=255, choices=USER_TYPE_CHOICES, default='cliente')
     
     is_staff = models.BooleanField(_('staff status'), default=False, help_text=_('Designates whether the user can log into this admin site.'))
     is_active = models.BooleanField(_('active'), default=True, help_text=_('Designates whether this user should be treated as active. Unselect this instead of deleting accounts.'))
@@ -53,7 +59,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     date_joined = models.DateTimeField(_('date joined'), default=timezone.now)
 
     USERNAME_FIELD = 'cpf'
-    REQUIRED_FIELDS = ['complete_name', 'email', 'cellphone', 'birthday_date']
+    REQUIRED_FIELDS = ['complete_name', 'email', 'cellphone', 'birthday_date', 'user_type']
 
     objects = UserManager()
 
@@ -69,3 +75,17 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     def email_user(self, subject, message, from_email=None):
         send_mail(subject, message, from_email, [self.email])
+
+
+def farm_picture_uploader(instance, filename):
+    return '/'.join(['media', instance.user.cpf, filename])
+
+
+class UserFarm(models.Model):
+    user = models.OneToOneField(User, on_delete=models.DO_NOTHING, null=False, blank=False)
+    name = models.CharField(max_length=255, null=False, blank=False)
+    picture = models.ImageField(upload_to=farm_picture_uploader)
+    cep = models.CharField(max_length=12, null=False, blank=False)
+    address = models.CharField(max_length=255, null=False, blank=False)
+    city = models.CharField(max_length=255, null=False, blank=False)
+    state = models.CharField(max_length=255, choices=STATE_CHOICES, default='DF')
