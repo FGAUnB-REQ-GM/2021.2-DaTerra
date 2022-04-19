@@ -1,7 +1,6 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
-from .models import User, UserFarm
-
+from .models import *
 
 # Create your forms here.
 class NewConsumerForm(UserCreationForm):
@@ -16,8 +15,17 @@ class NewConsumerForm(UserCreationForm):
 			user.save()
 		return user
 
-
 class UserFarmForm(forms.ModelForm):
     class Meta:
         model = UserFarm
         fields = ("user", "name", "picture", "address", "cep", "city", "state")
+
+class FarmProductForm(forms.ModelForm):
+    class Meta:
+        model = FarmProduct
+        fields = ("user", "name_product", "picture", "descripition", "type", "ammount", "amount_type", "price")
+
+class OrderForm(forms.ModelForm):
+    class Meta:
+        model = Order
+        fields = ("buyer", "seller", "product","amount_type", "buyer_review", "seller_review", "status", "date_buy")
