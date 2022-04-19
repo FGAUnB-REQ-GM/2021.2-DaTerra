@@ -4,6 +4,7 @@ from django.core import validators
 from django.utils.translation import gettext_lazy as _
 from django.utils import timezone
 from django.core.mail import send_mail
+from numpy import product
 
 
 class UserManager(BaseUserManager):
@@ -41,7 +42,19 @@ USER_TYPE_CHOICES = (
     ('produtor', 'PRODUTOR'),
 )
 
-
+PRODUCT_TYPE_CHOICES = (
+    ('fruta', 'FRUTA'),
+    ('legume', 'LEGUME'),
+    ('verdura', 'VERDURA'),
+)
+AMOUNT_TYPE_CHOICES = (
+    ('kg', 'KG'),
+    ('unidade', 'UNIDADE'),
+)
+ORDER_TYPE_CHOICES = (
+    ('finalizado', 'FINALIZADO'),
+    ('andamento', 'ANDAMENTO'),
+)
 
 class User(AbstractBaseUser, PermissionsMixin):
     cpf = models.CharField(_('cpf'), max_length=30, unique=True)
@@ -80,6 +93,9 @@ class User(AbstractBaseUser, PermissionsMixin):
 def farm_picture_uploader(instance, filename):
     return '/'.join(['media', instance.user.cpf, filename])
 
+def product_picture_uploader(instance, filename):
+    return '/'.join(['media', instance.user.cpf, filename, "product"])
+
 
 class UserFarm(models.Model):
     user = models.OneToOneField(User, on_delete=models.DO_NOTHING, null=False, blank=False)
@@ -89,3 +105,23 @@ class UserFarm(models.Model):
     address = models.CharField(max_length=255, null=False, blank=False)
     city = models.CharField(max_length=255, null=False, blank=False)
     state = models.CharField(max_length=255, choices=STATE_CHOICES, default='DF')
+
+class FarmProduct(models.Model):
+    user = models.OneToOneField(User, on_delete=models.DO_NOTHING, null=False, blank=False)
+    name_product = models.CharField(max_length=255, null=False, blank=False)
+    picture = models.ImageField(upload_to=product_picture_uploader)
+    description = models.TextField(max_length=255, null=False, blank=False)
+    type = models.CharField(max_length=255, choices=PRODUCT_TYPE_CHOICES, null=False, blank=False)
+    amount = models.IntegerField(null=False, blank=False)
+    amount_type = models.CharField(max_length=255, choices=AMOUNT_TYPE_CHOICES, null=False, blank=False)
+    price = models.FloatField(null=False, blank=False)
+
+class Order(models.Model):
+    buyer = models.OneToOneField(User, on_delete=models.DO_NOTHING, null=False, blank=False)
+    seller = models.OneToOneField(User, on_delete=models.DO_NOTHING, null=False, blank=False)
+    product = models.OneToOneField(FarmProduct, on_delete=models.DO_NOTHING, null=False, blank=False)
+    amount_buy = models.IntegerField(null=False, blank=False)
+    buyer_review = models.IntegerField(null=True, blank=True)
+    seller_review = models.IntegerField(null=True, blank=True)
+    status = models.CharField(max_length=255, choices=ORDER_TYPE_CHOICES, null=False, blank=False)
+    date_buy = models.DateField(auto_now_add=True, blank=True)
