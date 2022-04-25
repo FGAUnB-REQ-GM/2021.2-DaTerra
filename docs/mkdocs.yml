@@ -41,8 +41,6 @@ nav:
       - Histórias de Usuário: pbb_historias.md
       - BDD: bdd.md
   - Unidade 4:
-    - Visão Geral do Produto:
-      - Requisitos: Requisitos2.md
     - Visão Geral do Projeto: Vsprojeto2.md
     - User Story Map: mapaHistorias.md
   - MVP:
