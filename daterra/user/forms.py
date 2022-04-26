@@ -23,9 +23,9 @@ class UserFarmForm(forms.ModelForm):
 class FarmProductForm(forms.ModelForm):
     class Meta:
         model = FarmProduct
-        fields = ("user", "name_product", "picture", "descripition", "type", "ammount", "amount_type", "price")
+        fields = ("user", "name_product", "picture", "description", "type", "amount", "amount_type", "price")
 
 class OrderForm(forms.ModelForm):
     class Meta:
         model = Order
-        fields = ("buyer", "seller", "product","amount_type", "buyer_review", "seller_review", "status", "date_buy")
+        fields = ("buyer", "seller", "product","amount_buy", "buyer_review", "seller_review", "status")

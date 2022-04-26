@@ -117,8 +117,8 @@ class FarmProduct(models.Model):
     price = models.FloatField(null=False, blank=False)
 
 class Order(models.Model):
-    buyer = models.OneToOneField(User, on_delete=models.DO_NOTHING, null=False, blank=False)
-    seller = models.OneToOneField(User, on_delete=models.DO_NOTHING, null=False, blank=False)
+    buyer = models.BigIntegerField(null=False, blank=False)
+    seller = models.BigIntegerField( null=False, blank=False)
     product = models.OneToOneField(FarmProduct, on_delete=models.DO_NOTHING, null=False, blank=False)
     amount_buy = models.IntegerField(null=False, blank=False)
     buyer_review = models.IntegerField(null=True, blank=True)
