@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Navbar from "./../navbarfarmer.component";
 import Add from "./../Buttons/addbutton.component";
 import Food from "./../../assets/images/food.jpg"
-
+import { BsFillStarFill } from "react-icons/bs";
 const array = [{
     product_name: "Lorem Ipsum",
     quantity: 150,
@@ -26,8 +26,101 @@ const array = [{
     image: Food,
     unit: "pc",
     score: 5
+},{
+    product_name: "Lorem Ipsum",
+    quantity: 33,
+    price: "11,99",
+    image: Food,
+    unit: "pc",
+    score: 2
+},
+{
+    product_name: "Lorem Ipsum",
+    quantity: 33,
+    price: "11,99",
+    image: Food,
+    unit: "pc",
+    score: 1
+},
+{
+    product_name: "Lorem Ipsum",
+    quantity: 33,
+    price: "11,99",
+    image: Food,
+    unit: "pc",
+    score: 0
+},{
+    product_name: "Lorem Ipsum",
+    quantity: 33,
+    price: "11,99",
+    image: Food,
+    unit: "pc",
+    score: 4
 },
 ]
+function scoreStars(score){
+    if(score == 5){
+        return(
+            <div>
+                <i class="bi bi-star-fill star-size checked"> <BsFillStarFill/></i>
+                <i class="bi bi-star-fill star-size checked"> <BsFillStarFill/></i>
+                <i class="bi bi-star-fill star-size checked"> <BsFillStarFill/></i>
+                <i class="bi bi-star-fill star-size checked"> <BsFillStarFill/></i>
+                <i class="bi bi-star-fill star-size checked"> <BsFillStarFill/></i>
+            </div>
+        )
+    }else if(score == 4){
+        return(
+            <div>
+                <i class="bi bi-star-fill star-size checked"> <BsFillStarFill/></i>
+                <i class="bi bi-star-fill star-size checked"> <BsFillStarFill/></i>
+                <i class="bi bi-star-fill star-size checked" > <BsFillStarFill/></i>
+                <i class="bi bi-star-fill star-size checked"> <BsFillStarFill/></i>
+                <i class="bi bi-star-fill star-size"> <BsFillStarFill/></i>
+            </div>
+        )
+    }else if(score == 3){
+        return(
+            <div>
+                <i class="bi bi-star-fill star-size checked"> <BsFillStarFill/></i>
+                <i class="bi bi-star-fill star-size checked"> <BsFillStarFill/></i>
+                <i class="bi bi-star-fill star-size checked" > <BsFillStarFill/></i>
+                <i class="bi bi-star-fill star-size"> <BsFillStarFill/></i>
+                <i class="bi bi-star-fill star-size"> <BsFillStarFill/></i>
+            </div>
+        )
+    }else if(score == 2){
+        return(
+            <div>
+                <i class="bi bi-star-fill star-size checked"> <BsFillStarFill/></i>
+                <i class="bi bi-star-fill star-size checked"> <BsFillStarFill/></i>
+                <i class="bi bi-star-fill star-size" > <BsFillStarFill/></i>
+                <i class="bi bi-star-fill star-size"> <BsFillStarFill/></i>
+                <i class="bi bi-star-fill star-size"> <BsFillStarFill/></i>
+            </div>
+        )
+    }else if(score == 1){
+        return(
+            <div>
+                <i class="bi bi-star-fill star-size checked"> <BsFillStarFill/></i>
+                <i class="bi bi-star-fill star-size"> <BsFillStarFill/></i>
+                <i class="bi bi-star-fill star-size" > <BsFillStarFill/></i>
+                <i class="bi bi-star-fill star-size"> <BsFillStarFill/></i>
+                <i class="bi bi-star-fill star-size"> <BsFillStarFill/></i>
+            </div>
+        )
+    }else{
+        return(
+            <div>
+                <i class="bi bi-star-fill star-size"> <BsFillStarFill/></i>
+                <i class="bi bi-star-fill star-size"> <BsFillStarFill/></i>
+                <i class="bi bi-star-fill star-size" > <BsFillStarFill/></i>
+                <i class="bi bi-star-fill star-size"> <BsFillStarFill/></i>
+                <i class="bi bi-star-fill star-size"> <BsFillStarFill/></i>
+            </div>
+        )
+    }
+}
 
 const itens = array.map((element) =>
     <div>
@@ -40,7 +133,7 @@ const itens = array.map((element) =>
                 Quantidade em estoque: {element.quantity} {element.unit}
             </div>
             <div class="line score col-lg-4">
-                estrelas
+                {scoreStars(element.score)}
                 <br/>
                 Preço R${element.price} {element.unit}
             </div>
