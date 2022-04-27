@@ -48,8 +48,7 @@ nav:
       - Produtor: CasosDeUsoProdutor.md
       - Cliente: CasosDeUsosCliente.md
   - MVP:
-    - MVP 1: mvp1.md
-    - MVP 2: mvp1.md
+    - MVP: mvp1.md
   - Resultados: resultados.md
 
 plugins:
