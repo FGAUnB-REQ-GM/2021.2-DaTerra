@@ -31,28 +31,24 @@ const array = [{
 
 const itens = array.map((element) =>
     <div>
-        <div class="info-produto col-lg-6"> 
-            <div>
+        <div class="farm-product col-lg-12"> 
+            <div class="col-lg-4" >
                 <img className="img-element" src={element.image}/>
             </div>
-            <div>
-                {element.product_name}
-                Quantidade em estoque:{element.quantity} {element.unit}
+            <div class="line col-lg-2">
+                {element.product_name}<br/>
+                Quantidade em estoque: {element.quantity} {element.unit}
             </div>
-            <div>
-                {element.score}
-                R${element.price}
+            <div class="line score col-lg-4">
+                estrelas
+                <br/>
+                Preço R${element.price} {element.unit}
             </div>
-            <div>
-                <a class="no-sub "href="">
+            <div class="col-lg-2">
+                <a class="a-link no-sub "href="">
                     editar
                 </a>
             </div>
-            
-            
-
-            
-            
         </div>
 
         <div class="vl-horizontal col-lg-8"></div>
@@ -69,9 +65,11 @@ export default class SignUp extends Component {
                     <div class="vl-horizontal col-lg-8"></div>
                     {itens}
                 </div>
-                <div class="btn-add-farmer">
-                    <Add/>
-                </div>
+                <a class="no-sub" href="">
+                    <div class="btn-add-farmer">
+                        <Add/>
+                    </div>
+                </a>
             </div>
         );
     }

@@ -364,3 +364,27 @@
   position: fixed;
   padding-right: 2em
 }
+.a-link{
+    color: #87BE00;
+}
+.a-link:hover {
+    color:#24572c;
+}
+.farm-product{
+  display: inline-flex;
+  align-items: center;
+  padding-left: 4em;
+  padding-right: 2em;
+  font-family: 'Cuprum',sans-serif;
+  padding-top: 2em;
+}
+.score{
+  padding-left: 3em;
+  
+}
+.line{
+  line-height: 2em;
+}
+.checked {
+  color: #87BE00;
+}
