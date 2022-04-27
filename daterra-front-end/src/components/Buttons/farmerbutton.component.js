@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from './../assets/images/farm.png'
+import logo from './../../assets/images/farm.png'
 
 const logovar = () => {
     return(

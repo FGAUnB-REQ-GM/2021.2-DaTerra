@@ -4,12 +4,12 @@ import './App.css';
 import { BrowserRouter as Router,Routes,Route} from "react-router-dom";
 
 import Login from "./components/Login/login.component";
-import SignUp from "./components/signup.component";
-import UserChoice from "./components/userchoice.component";
-import FarmRegister from "./components/farmregister.component";
+import SignUp from "./components/Login/signup.component";
+import UserChoice from "./components/Login/userchoice.component";
+import FarmRegister from "./components/Login/farmregister.component";
 import ClientHome from "./components/homecliente.component";
 import ClientHomePopup from "./components/homeclientepopup.component";
-
+import FarmerHome from "./components/Homescreen/homefarmer.component";
 function App() {
   return (
     <Router>
@@ -21,8 +21,9 @@ function App() {
               <Route path="/choice" element={<UserChoice/>} />
               <Route path="/signup" element={<SignUp/>} />
               <Route path="/signup/farm" element={<FarmRegister/>} />
-              <Route path="/clienthome" element={<ClientHome/>} />
+              <Route path="/home/client" element={<ClientHome/>} />
               <Route path="/clienthomepp" element={<ClientHomePopup/>} />
+              <Route path="/home/farmer" element={<FarmerHome/>} />
 
             </Routes>
         </div>

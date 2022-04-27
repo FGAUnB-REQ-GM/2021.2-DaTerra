@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Logo from "./logo.component.js";
-import Buyer from"./clientbutton.component.js";
-import Farmer from "./farmerbutton.component.js";
+import Logo from "../logo.component.js";
+import Buyer from"../Buttons/clientbutton.component.js";
+import Farmer from "../Buttons/farmerbutton.component.js";
 
 export default class SignUp extends Component {
     render() {

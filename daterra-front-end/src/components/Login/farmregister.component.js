@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Logo from "./logo.component.js";
+import Logo from "../logo.component.js";
 
 export default class SignUp extends Component {
     render() {

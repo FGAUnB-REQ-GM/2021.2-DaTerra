@@ -160,7 +160,8 @@
   position: fixed;
   top: 0%;
   height: 5em;
-  box-shadow: 5px 5px 11px lightgrey
+  box-shadow: 5px 5px 11px lightgrey;
+  z-index: 9;
 }
 
 .logo-nav {
@@ -196,9 +197,18 @@
   color: #282c34;
   padding-bottom: 0em; 
   margin: -15px auto 0px auto; 
-
+  text-decoration: none !important;
 }
-
+.nav-exit{
+  display: inline-flex;
+  padding: 0.5em;
+  height: 2.8em;
+  font-weight: bold;
+  color: #282c34;
+  padding-bottom: 0em; 
+  margin: -15px auto 0px auto; 
+  text-decoration: none !important;
+}
 .vl-nav {
   border-left: 1px solid;
   border-right: 1px solid;
@@ -235,10 +245,17 @@
 .white-box {
   background-color: white;
   margin: auto;
-  margin-top: 15%;
-  width: 80%;
-  height: 1000px;
-  padding: 10px; 
+  margin-left: 10%;
+  top:5em;
+  padding-top: 4em;
+  padding-bottom: 30em;
+  bottom: 0;
+  position: fixed;
+  overflow-y:scroll;
+  width: 80vw;
+  height: 100vh; 
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 .lista-nome{
@@ -285,8 +302,7 @@
 
 .info-produto {
   position: relative;
-  left: 150px;
-  
+  left: 5em;
 }
 
 
@@ -306,11 +322,45 @@
 .popup {
   background-color: #fff;
   border-radius: 5px;
-  box-shadow: ;
   padding: 30px 50px;
   width: 500px;
   max-width: 100%;
   box-shadow: 0px 2px 4px lightgrey;
   text-align: center;
 }
+.btn-add{
+  height: 40px;
+  display: inline-flex;
+  float: right;
+  padding-right: 2em
+}
 
+.img-element{
+  border-radius: 12px;
+  max-width: 15em;
+  height: 8em;
+}
+.white-box::-webkit-scrollbar {
+  display: none;
+}
+.nav-elemento:hover{
+  color: #282c34;
+}
+.no-sub{
+  text-decoration: none !important;
+}
+.no-sub:hover{
+  text-decoration: none !important;
+}
+.produtos-list{
+  display: block
+}
+.btn-add-farmer{
+  height: 70px;
+  display: inline-flex;
+  width: auto;
+  right: 0;
+  bottom: 1em;
+  position: fixed;
+  padding-right: 2em
+}

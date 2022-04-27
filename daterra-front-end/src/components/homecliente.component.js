@@ -1,78 +1,89 @@
 import React, { Component } from "react";
-import Logo from "./logo2.component";
-import Exit from "./exitbutton.component"
+import Navbar from "./navbarclient.component";
+import Add from "./Buttons/addbutton.component";
+import Food from "./../assets/images/food.jpg"
+
+const array = [{
+    product_name: "Lorem Ipsum",
+    farm_name: "Dolor sit amet",
+    price: "11,99",
+    image: Food,
+},
+{
+    product_name: "outro nome",
+    farm_name: "Dolor sit amet",
+    price: "11,99",
+    image: "",
+},
+{
+    product_name: "Lorem Ipsum",
+    farm_name: "Dolor sit amet",
+    price: "11,99",
+    image: "",
+},
+{
+    product_name: "Lorem Ipsum",
+    farm_name: "Dolor sit amet",
+    price: "11,99",
+    image: "",
+},{
+    product_name: "Lorem Ipsum",
+    farm_name: "Dolor sit amet",
+    price: "11,99",
+    image: Food,
+},{
+    product_name: "Lorem Ipsum",
+    farm_name: "Dolor sit amet",
+    price: "11,99",
+    image: Food,
+},{
+    product_name: "Lorem Ipsum",
+    farm_name: "Dolor sit amet",
+    price: "11,99",
+    image: Food,
+},{
+    product_name: "Lorem Ipsum",
+    farm_name: "Dolor sit amet",
+    price: "11,99",
+    image: Food,
+},{
+    product_name: "Lorem Ipsum",
+    farm_name: "Dolor sit amet",
+    price: "11,99",
+    image: Food,
+}
+]
+
+const itens = array.map((element) =>
+    <div>
+        <div class="info-produto col-lg-6"> 
+            <ul className="lista-nome col-lg-6">
+                <li className="nome-elemento col-lg-6"><img className="img-element" src={element.image}/></li>
+                <li className="nome-elemento col-lg-6">{element.product_name}</li>
+                <li className="nome-elemento col-lg-6">{element.farm_name}</li>
+                <li className="nome-elemento col-lg-6">R${element.price}</li>
+            </ul>
+        </div>
+        <div></div>
+        <a href="">
+            <div className="btn-add">
+                    <Add/>
+            </div>
+        </a>
+        <div class="vl-horizontal col-lg-8"></div>
+    </div>
+);
+
 export default class SignUp extends Component {
+    
     render() {
         return (
             <div >
-                
+                <Navbar/>
                 <div className="white-box col-lg-10" > 
-                
                     <div class="vl-horizontal col-lg-8"></div>
-                    <div class="info-produto col-lg-6"> 
-                        <ul className="lista-nome col-lg-6">
-                            <li className="nome-elemento col-lg-6">nome produto</li>
-                            <li className="nome-elemento col-lg-6">nome fazenda</li>
-                            <li className="nome-elemento col-lg-6">valor kg produto</li>
-                        </ul>
-                    </div>
-
-                    <div class="vl-horizontal col-lg-8"></div>
-                    <div class="info-produto col-lg-6"> 
-                        <ul className="lista-nome col-lg-6">
-                            <li className="nome-elemento col-lg-6">nome produto</li>
-                            <li className="nome-elemento col-lg-6">nome fazenda</li>
-                            <li className="nome-elemento col-lg-6">valor kg produto</li>
-                        </ul>
-                    </div>
-
-                    <div class="vl-horizontal col-lg-8"></div>
-                    <div class="info-produto col-lg-6"> 
-                        <ul className="lista-nome col-lg-6">
-                            <li className="nome-elemento col-lg-6">nome produto</li>
-                            <li className="nome-elemento col-lg-6">nome fazenda</li>
-                            <li className="nome-elemento col-lg-6">valor kg produto</li>
-                        </ul>
-                    </div>
-
-                    <div class="vl-horizontal col-lg-8"></div>
-                    <div class="info-produto col-lg-6"> 
-                        <ul className="lista-nome col-lg-6">
-                            <li className="nome-elemento col-lg-6">nome produto</li>
-                            <li className="nome-elemento col-lg-6">nome fazenda</li>
-                            <li className="nome-elemento col-lg-6">valor kg produto</li>
-                        </ul>
-                    </div>
-                    <div class="vl-horizontal col-lg-8"></div>
-                    <div class="info-produto col-lg-6"> 
-                        <ul className="lista-nome col-lg-6">
-                            <li className="nome-elemento col-lg-6">nome produto</li>
-                            <li className="nome-elemento col-lg-6">nome fazenda</li>
-                            <li className="nome-elemento col-lg-6">valor kg produto</li>
-                        </ul>
-                    </div>
-                    
+                    {itens}
                 </div>
-
-
-                <nav className="nav-cliente col-lg-12" > 
-                <div className="logo-nav col-lg-6"> 
-                    <Logo/> 
-                    <h1 className="titulo-logo">DaTerra</h1>
-                </div>
-                    <ul className="nav-botoes col-lg-6"> 
-                        <div class="vl-nav"></div>
-                        <li className="nav-elemento"> <a>Meu carrinho</a> </li>
-                        <div class="vl-nav"></div>
-                        <li className="nav-elemento"> <a>Meus pedidos</a> </li>
-                        <div class="vl-nav"></div>
-                        <li className="nav-elemento"> <a>Minha conta</a> </li>
-                        <div class="vl-nav"></div>
-                        <li className="nav-elemento"></li>
-                        <div className="exit-imagen"> <Exit/> </div>
-                    </ul>
-                </nav>
-
             </div>
         );
     }

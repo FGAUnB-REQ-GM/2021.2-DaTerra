@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Logo from "./logo2.component";
-import Exit from "./exitbutton.component"
+import Exit from "./Buttons/exitbutton.component"
 export default class SignUp extends Component {
     render() {
         return (
