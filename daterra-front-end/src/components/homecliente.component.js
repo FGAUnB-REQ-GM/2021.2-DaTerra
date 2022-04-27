@@ -57,7 +57,7 @@ const array = [{
 const itens = array.map((element) =>
     <div>
         <div class="info-produto col-lg-6"> 
-            <ul className="lista-nome col-lg-6">
+            <ul className="lista-nome col-lg-6"> 
                 <li className="nome-elemento col-lg-6"><img className="img-element" src={element.image}/></li>
                 <li className="nome-elemento col-lg-6">{element.product_name}</li>
                 <li className="nome-elemento col-lg-6">{element.farm_name}</li>
