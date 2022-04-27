@@ -10,6 +10,10 @@ import FarmRegister from "./components/Login/farmregister.component";
 import ClientHome from "./components/homecliente.component";
 import ClientHomePopup from "./components/homeclientepopup.component";
 import FarmerHome from "./components/Homescreen/homefarmer.component";
+import MeusPedidos from "./components/pedidos.component";
+import Vendas from "./components/vendas.component";
+import Carrinho from "./components/meucarrinho.component";
+
 function App() {
   return (
     <Router>
@@ -24,6 +28,9 @@ function App() {
               <Route path="/home/client" element={<ClientHome/>} />
               <Route path="/clienthomepp" element={<ClientHomePopup/>} />
               <Route path="/home/farmer" element={<FarmerHome/>} />
+              <Route path="/meuspedidos" element={<MeusPedidos/>} />
+              <Route path="/vendas" element={<Vendas/>} />
+              <Route path="/carrinho" element={<Carrinho/>} />
 
             </Routes>
         </div>
