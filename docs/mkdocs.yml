@@ -43,9 +43,13 @@ nav:
   - Unidade 4:
     - Visão Geral do Projeto: Vsprojeto2.md
     - User Story Map: mapaHistorias.md
+  - Unidade 5:
+    - Casos de Uso:
+      - Produtor: CasosDeUsoProdutor.md
+      - Cliente: CasosDeUsosCliente.md
   - MVP:
-    - Protótipo: prototipo1.md
     - MVP 1: mvp1.md
+    - MVP 2: mvp1.md
   - Resultados: resultados.md
 
 plugins:
