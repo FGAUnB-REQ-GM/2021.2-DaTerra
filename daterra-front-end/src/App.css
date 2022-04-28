@@ -408,3 +408,16 @@
 .star-size{
   font-size: 2em;
 }
+.search-bar{
+  float: left;
+  padding: 0.1em 0.5em;
+  border:1px solid #ababab;
+  border-radius: 0.2em;
+  margin-top: 0.5em;
+  font-family: 'Cuprum',sans-serif;
+  margin-left:2.5em;
+  font-size: 17px;
+}
+.search-bar:focus{
+  border:1px solid #ababab;
+}
