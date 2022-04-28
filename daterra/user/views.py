@@ -82,3 +82,28 @@ def register_request_farmer_farm(request):
 			"form": form,
 			"errors": errors,
 		})
+
+
+def update_account(request):
+	errors = []
+	if request.method == "POST":
+		request.POST._mutable = True
+		request.POST['user_type'] = 'cliente'
+		form = NewConsumerForm(data=request.POST, instance=request.user)
+		if form.is_valid():
+			form.save()
+			return redirect("index")
+		else:
+			errors = form.errors
+
+	form = NewConsumerForm()
+
+	request.user.birthday_date = str(request.user.birthday_date)
+	return render (
+        request=request,
+        template_name="registration/update_account.html",
+        context={
+			"user": request.user,
+			"form":form,
+			"errors": errors,
+		})

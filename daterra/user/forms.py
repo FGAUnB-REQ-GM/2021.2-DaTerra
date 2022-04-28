@@ -21,3 +21,4 @@ class UserFarmForm(forms.ModelForm):
     class Meta:
         model = UserFarm
         fields = ("user", "name", "picture", "address", "cep", "city", "state")
+
