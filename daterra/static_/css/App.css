@@ -274,7 +274,14 @@ body, html, .App, #root, .outer {
   object-fit: scale-down;
   position: relative;
 }
-
+.modal {
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 10!important;
+}
+.modal-backdrop {
+  display: none;
+ 
+}
 .logo-arvore {
   max-width: 100%;
   max-height: 100%;
@@ -400,6 +407,24 @@ body, html, .App, #root, .outer {
   position: relative;
 }
 
+.testecss {
+  margin-top: 1000px !important;
+
+}
+
+.position-sticky {
+  position: sticky !important;
+  top: 0;
+}
+
+.gambiarra {
+  height: 200px !important;
+}
+
+.container-white {
+  background-color: #fff !important;
+}
+
 .info-produto {
   position: relative;
   left: 5em;
@@ -437,8 +462,7 @@ body, html, .App, #root, .outer {
 
 .img-element{
   border-radius: 12px;
-  max-width: 15em;
-  height: 8em;
+  max-width: 100%;
 }
 .white-box::-webkit-scrollbar {
   display: none;
@@ -490,4 +514,29 @@ body, html, .App, #root, .outer {
 }
 .star-size{
   font-size: 2em;
+}
+.search-bar{
+  float: left;
+  padding: 0.1em 0.5em;
+  border:1px solid #ababab;
+  border-radius: 0.2em;
+  margin-top: 0.5em;
+  font-family: 'Cuprum',sans-serif;
+  margin-left:2.5em;
+  font-size: 17px;
+}
+.search-bar:focus{
+  border:1px solid #ababab;
+}
+
+.botao-finalizar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em;
+}
+
+.img-buyer {
+  height: 5em !important;
 }

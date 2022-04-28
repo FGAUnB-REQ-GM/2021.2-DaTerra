@@ -43,17 +43,23 @@ USER_TYPE_CHOICES = (
 )
 
 PRODUCT_TYPE_CHOICES = (
-    ('fruta', 'FRUTA'),
+    ('frutas', 'FRUTA'),
     ('legume', 'LEGUME'),
-    ('verdura', 'VERDURA'),
+    ('verduras', 'VERDURA'),
+    ('carnes', 'VERDURA'),
+    ('grãos', 'VERDURA'),
 )
 AMOUNT_TYPE_CHOICES = (
-    ('kg', 'KG'),
-    ('unidade', 'UNIDADE'),
+    ('Quilogramas', 'KG'),
+    ('Unidade', 'UNIDADE'),
+    ('Peça', 'UNIDADE'),
+    ('Litros', 'UNIDADE'),
 )
 ORDER_TYPE_CHOICES = (
     ('finalizado', 'FINALIZADO'),
     ('andamento', 'ANDAMENTO'),
+    ('andamento2', 'ANDAMENTO'),
+    ('andamento3', 'ANDAMENTO'),
 )
 
 class User(AbstractBaseUser, PermissionsMixin):
@@ -107,9 +113,9 @@ class UserFarm(models.Model):
     state = models.CharField(max_length=255, choices=STATE_CHOICES, default='DF')
 
 class FarmProduct(models.Model):
-    user = models.OneToOneField(User, on_delete=models.DO_NOTHING, null=False, blank=False)
+    user = models.BigIntegerField(null=False, blank=False)
     name_product = models.CharField(max_length=255, null=False, blank=False)
-    picture = models.ImageField(upload_to=product_picture_uploader)
+    picture = models.ImageField(upload_to=product_picture_uploader, blank=True, null=True)
     description = models.TextField(max_length=255, null=False, blank=False)
     type = models.CharField(max_length=255, choices=PRODUCT_TYPE_CHOICES, null=False, blank=False)
     amount = models.IntegerField(null=False, blank=False)
@@ -118,8 +124,8 @@ class FarmProduct(models.Model):
 
 class Order(models.Model):
     buyer = models.BigIntegerField(null=False, blank=False)
-    seller = models.BigIntegerField( null=False, blank=False)
-    product = models.OneToOneField(FarmProduct, on_delete=models.DO_NOTHING, null=False, blank=False)
+    seller = models.BigIntegerField(null=False, blank=False)
+    product = models.BigIntegerField(null=False, blank=False)
     amount_buy = models.IntegerField(null=False, blank=False)
     buyer_review = models.IntegerField(null=True, blank=True)
     seller_review = models.IntegerField(null=True, blank=True)
