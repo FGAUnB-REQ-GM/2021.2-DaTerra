@@ -300,6 +300,24 @@
   position: relative;
 }
 
+.testecss {
+  margin-top: 1000px !important;
+
+}
+
+.position-sticky {
+  position: sticky !important;
+  top: 0;
+}
+
+.gambiarra {
+  height: 200px !important;
+}
+
+.container-white {
+  background-color: #fff !important;
+}
+
 .info-produto {
   position: relative;
   left: 5em;
@@ -337,8 +355,7 @@
 
 .img-element{
   border-radius: 12px;
-  max-width: 15em;
-  height: 8em;
+  max-width: 100%;
 }
 .white-box::-webkit-scrollbar {
   display: none;

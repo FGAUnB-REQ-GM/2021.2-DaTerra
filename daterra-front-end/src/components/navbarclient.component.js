@@ -4,7 +4,7 @@ import Exit from "./Buttons/exitbutton.component"
 export default class SignUp extends Component {
     render() {
         return (
-            <nav className="nav-cliente col-lg-12" > 
+            <nav className="nav-cliente col-lg-12 mb-5" > 
               <a class="no-sub" href="">
                     <div className="logo-nav col-lg-6"> 
                         <Logo/> 
