@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import Navbar from "./../navbarfarmer.component";
 import Add from "./../Buttons/addbutton.component";
-import Food from "./../../assets/images/food.jpg"
+import Food from "./../../assets/images/food.jpg";
+import SearchBar from "./../pesquisa.component";
 import { BsFillStarFill } from "react-icons/bs";
 const array = [{
     product_name: "Lorem Ipsum",
@@ -56,10 +57,18 @@ const array = [{
     image: Food,
     unit: "pc",
     score: 4
+},{
+    product_name: "batata",
+    quantity: 33,
+    price: "186,99",
+    image: "era pra ser uma imagem",
+    unit: "pc",
+    score: 2
 },
 ]
+
 function scoreStars(score){
-    if(score == 5){
+    if(score === 5){
         return(
             <div>
                 <i class="bi bi-star-fill star-size checked"> <BsFillStarFill/></i>
@@ -69,27 +78,27 @@ function scoreStars(score){
                 <i class="bi bi-star-fill star-size checked"> <BsFillStarFill/></i>
             </div>
         )
-    }else if(score == 4){
-        return(
-            <div>
-                <i class="bi bi-star-fill star-size checked"> <BsFillStarFill/></i>
-                <i class="bi bi-star-fill star-size checked"> <BsFillStarFill/></i>
-                <i class="bi bi-star-fill star-size checked" > <BsFillStarFill/></i>
-                <i class="bi bi-star-fill star-size checked"> <BsFillStarFill/></i>
-                <i class="bi bi-star-fill star-size"> <BsFillStarFill/></i>
-            </div>
-        )
-    }else if(score == 3){
+    }else if(score === 4){
         return(
             <div>
                 <i class="bi bi-star-fill star-size checked"> <BsFillStarFill/></i>
                 <i class="bi bi-star-fill star-size checked"> <BsFillStarFill/></i>
                 <i class="bi bi-star-fill star-size checked" > <BsFillStarFill/></i>
+                <i class="bi bi-star-fill star-size checked"> <BsFillStarFill/></i>
+                <i class="bi bi-star-fill star-size"> <BsFillStarFill/></i>
+            </div>
+        )
+    }else if(score === 3){
+        return(
+            <div>
+                <i class="bi bi-star-fill star-size checked"> <BsFillStarFill/></i>
+                <i class="bi bi-star-fill star-size checked"> <BsFillStarFill/></i>
+                <i class="bi bi-star-fill star-size checked" > <BsFillStarFill/></i>
                 <i class="bi bi-star-fill star-size"> <BsFillStarFill/></i>
                 <i class="bi bi-star-fill star-size"> <BsFillStarFill/></i>
             </div>
         )
-    }else if(score == 2){
+    }else if(score === 2){
         return(
             <div>
                 <i class="bi bi-star-fill star-size checked"> <BsFillStarFill/></i>
@@ -99,7 +108,7 @@ function scoreStars(score){
                 <i class="bi bi-star-fill star-size"> <BsFillStarFill/></i>
             </div>
         )
-    }else if(score == 1){
+    }else if(score === 1){
         return(
             <div>
                 <i class="bi bi-star-fill star-size checked"> <BsFillStarFill/></i>
@@ -114,7 +123,7 @@ function scoreStars(score){
             <div>
                 <i class="bi bi-star-fill star-size"> <BsFillStarFill/></i>
                 <i class="bi bi-star-fill star-size"> <BsFillStarFill/></i>
-                <i class="bi bi-star-fill star-size" > <BsFillStarFill/></i>
+                <i class="bi bi-star-fill star-size"> <BsFillStarFill/></i>
                 <i class="bi bi-star-fill star-size"> <BsFillStarFill/></i>
                 <i class="bi bi-star-fill star-size"> <BsFillStarFill/></i>
             </div>
@@ -126,7 +135,7 @@ const itens = array.map((element) =>
     <div>
         <div class="farm-product col-lg-12"> 
             <div class="col-lg-4" >
-                <img className="img-element" src={element.image}/>
+                <img class="img-element" src={element.image}/>
             </div>
             <div class="line col-lg-2">
                 {element.product_name}<br/>
@@ -154,7 +163,8 @@ export default class SignUp extends Component {
         return (
             <div >
                 <Navbar/>
-                <div className="white-box col-lg-10" > 
+                <div class="white-box col-lg-10" > 
+                    <SearchBar/>
                     <div class="vl-horizontal col-lg-8"></div>
                     {itens}
                 </div>

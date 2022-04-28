@@ -15,6 +15,7 @@ import Vendas from "./components/vendas.component";
 import Carrinho from "./components/meucarrinho.component";
 
 function App() {
+  
   return (
     <Router>
       <div className="App">
