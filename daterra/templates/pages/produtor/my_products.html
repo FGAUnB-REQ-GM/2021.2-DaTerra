@@ -1,0 +1,122 @@
+{% extends 'pages/main_base.html' %}
+{% load static %}
+
+{% block content %}
+<div>
+    <div class="white-box col-lg-10" >
+        <div class="vl-horizontal col-lg-8"></div>
+        {% for product in products %}
+            <div>
+                <div class="farm-product col-lg-12"> 
+                    <div class="col-lg-4" >
+                        <img class="img-element" src="{% static 'images/default_img.webp' %}"/>
+                    </div>
+                    <div class="line col-lg-2">
+                        {{product.name}} ({{product.type}})<br/>
+                        Quantidade em estoque: {{product.qtd}} {{product.unit}}'s
+                    </div>
+                    <div class="line score col-lg-4">
+                        Preço R${{product.price}} / {{product.unit}}
+                    </div>
+                    <div class="col-lg-2">
+                        <a class="a-link no-sub" type="button" data-bs-toggle="modal" data-bs-target="#modal{{product.id}}">
+                            editar
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="vl-horizontal col-lg-8"></div>
+
+                <div class="modal fade" id="modal{{product.id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <form action="{% url 'product_edit'%}" method="POST">
+                            {% csrf_token %}
+                            <input class="me-2" name="product_id" type="number" value="{{order.id}}" hidden></input>
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">EDITAR PRODUTO</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            
+                        </div>
+                        <div class="modal-footer text-center">
+                            <button type="submit" class=" btn btn-primary" data-bs-dismiss="modal">Finalizar</button>
+                        </div>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <a class="no-sub" href="" data-bs-toggle="modal" data-bs-target="#modalcreateproduct">
+        <div class="btn-add-farmer">
+            <img class="image" src="{% static 'images/add.png' %}" alt=""/>
+        </div>
+    </a>
+
+    <div class="modal fade" id="modalcreateproduct" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Adicionar Produto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form method="POST" action="{% url 'my_products' %}">
+                        {% csrf_token %}
+                            <div class="form-group">
+                                <input type="file" name="picture" accept="image/*" required id="id_picture" class="form-control" placeholder="Foto"/>
+                            </div>
+                            <br/>
+                            <div class="form-group">
+                                <input type="text" name="name_product" class="form-control" placeholder="Nome do produto" />
+                            </div>
+                            <br/>
+                            <br/>
+
+                            <div class="form-group">
+                                <select class="form-control" name="type" id="tipo_produto">
+                                    <option value="" disabled selected>Tipo do produto - Selecione</option>
+                                    <option value="frutas">frutas</option>
+                                    <option value="verduras">verduras</option>
+                                    <option value="carnes">carnes</option>
+                                    <option value="grãos">grãos</option>
+                                </select>
+                            </div>
+                            <br/>                    
+                            <div class="form-group">
+                                <input type="text" name="description" class="form-control" placeholder="Descrição do produto" />
+                            </div>
+                            <br/>
+                            <div class="form-group">
+                                <select class="form-control" name="amount_type" id="unidade">
+                                    <option value="" disabled selected>Tipo do unidade - Selecione</option>
+                                    <option value="Quilogramas">Quilogramas</option>
+                                    <option value="Unidade">Unidade</option>
+                                    <option value="Peça">Peça</option>
+                                    <option value="Litros">Litros</option>
+                                </select>
+                            </div>
+                            <br/>
+                            <div class="form-group">
+                                <input type="number" name="amount" class="form-control" placeholder="Quantidade em estoque" />
+                            </div>
+                            <br/>
+                            <div class="form-group">
+                                <input type="number" name="price" class="form-control" placeholder="Preço por unidade" />
+                            </div>
+
+                    
+                </div>
+                <div class="modal-footer text-center">
+                    <button type="submit" class=" btn btn-primary" data-bs-dismiss="modal">Adicionar</button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

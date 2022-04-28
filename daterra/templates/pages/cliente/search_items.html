@@ -1,0 +1,64 @@
+{% extends 'pages/main_base.html' %}
+{% load static %}
+
+{% block content %}
+<div>
+    <div class="white-box col-lg-10" > 
+        <div class="vl-horizontal col-lg-8"></div>
+        {% for product in products %}
+        <div>
+            <div class="info-produto col-lg-6"> 
+                <ul class="lista-nome col-lg-6"> 
+                    <li class="nome-elemento col-lg-6"><img class="img-element" src="{% static 'images/default_img.webp' %}"/></li>
+                    <li class="nome-elemento col-lg-6">
+                        NOME: {{product.name}}<br><br>
+                        DESC: {{product.description}}<br>
+                        <br>
+                        ESTOQUE:  {{product.qtd}} {{product.unit}} <br>
+                    </li>
+                    <li class="nome-elemento col-lg-6">{{product.user}}</li>
+                    <li class="nome-elemento col-lg-6">
+                        R$ {{product.price}} / {{product.unit}}
+
+                        <a href="" type="button" data-bs-toggle="modal" data-bs-target="#modal{{product.id}}">
+                            fazer pedido
+                        </a>
+                    </li>
+                </ul>
+                
+            </div>
+            <div></div>
+            <div class="vl-horizontal col-lg-8"></div>
+        </div>
+
+        <div class="modal fade" id="modal{{product.id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <form action="{% url 'fazer_pedido'%}" method="POST">
+                    {% csrf_token %}
+                    <input class="me-2" name="product_id" type="number" value="{{order.id}}" hidden></input>
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">FAZER PEDIDO</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="number" name="product" value="{{product.id}}" hidden></input>
+                    <input type="number" name="seller" value="{{product.seller}}" hidden></input>
+                    PREÇO: R$ {{product.price}} / {{product.unit}}
+                    <br>
+                    ESCOLHA UMA QUANTIDADE:
+                    <input type="number" name="amount_buy"></input>
+                </div>
+                <div class="modal-footer text-center">
+                    <button type="submit" class=" btn btn-primary" data-bs-dismiss="modal">REALIZAR PEDIDO</button>
+                </div>
+                </div>
+                </form>
+            </div>
+        </div>
+
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock content %}

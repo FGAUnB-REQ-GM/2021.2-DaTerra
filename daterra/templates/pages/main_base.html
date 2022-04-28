@@ -27,15 +27,27 @@
                     <ul class="nav-botoes col-lg-6"> 
                         <div class="vl-nav"></div>
                         <li class="nav-elemento"> 
-                            <a class=" nav-elemento no-sub" href="">
-                                Meu carrinho
+                            {% if user.user_type == 'cliente' %}
+                            <a class=" nav-elemento no-sub" href="{% url 'search_items' %}">
+                                Buscar produtos
                             </a> 
+                            {% else %}
+                            <a class=" nav-elemento no-sub" href="{% url 'my_products' %}">
+                                Meus produtos
+                            </a>
+                            {% endif %}
                         </li>
                         <div class="vl-nav"></div>
-                        <li class="nav-elemento"> 
-                            <a class=" nav-elemento no-sub" href="">
+                        <li class="nav-elemento">
+                            {% if user.user_type == 'cliente' %}
+                            <a class=" nav-elemento no-sub" href="{% url 'my_orders' %}">
                                 Meus pedidos
                             </a> 
+                            {% else %}
+                            <a class=" nav-elemento no-sub" href="{% url 'my_sales' %}">
+                                Minhas vendas
+                            </a>
+                            {% endif %}
                         </li>
                         <div class="vl-nav"></div>
                         <li class="nav-elemento"> 

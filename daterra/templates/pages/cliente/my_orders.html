@@ -1,0 +1,77 @@
+{% extends 'pages/main_base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="white-box col-lg-10" > 
+    <div class="vl-horizontal col-lg-8"></div>
+    {% for order in orders %}
+        <div>
+            <div class="farm-product col-lg-12"> 
+                <div class="col-lg-4" >
+                    <img class="img-element" src="{% static 'images/default_img.webp' %}"/>
+                </div>
+                <div class="line col-lg-2">
+                    {{order.product.name}}<br/>
+                    CONTATO PRODUTOR: {{order.seller}}<br/>
+                </div>
+                <div class="col-lg-2">
+                    Data do pedido:<br>{{order.date_buy}} <br/>
+                    Qtd. comprada:<br> {{order.amount_buy}}<br/>
+                </div>
+                <div class="line score col-lg-2">
+                    Preço R$ {{order.product.price}} / {{order.product.unit}} <br/>
+                    Total R$ {{order.product.total}}<br/>
+                </div>
+                <div class="col-lg-2">
+                    {% if order.status == 'andamento' %}
+                        <a class="a-link no-sub ps-5" type="button" data-bs-toggle="modal" data-bs-target="#modal{{order.id}}">
+                            finalizar pedido
+                        </a>
+                    {% elif order.status == 'andamento3' %}
+                        <a class="a-link no-sub ps-5" type="button" data-bs-toggle="modal" data-bs-target="#modal{{order.id}}">
+                            finalizar pedido<br>
+                        </a>
+                        FEEDBACK RECEBIDO: {{order.seller_review}}
+                    {% elif order.status == 'andamento2' %}
+                        <a class="a-link no-sub ps-5" type="button" disabled>
+                            feedback enviado<br>
+                        </a>
+                        FEEDBACK ENVIADO: {{order.buyer_review}}
+                    {% elif order.status == 'finalizado' %}
+                        <a class="a-link no-sub ps-5" type="button" disabled>
+                            finalizado<br>
+                        </a>
+                        FEEDBACK ENVIADO: {{order.buyer_review}}
+                        FEEDBACK RECEBIDO: {{order.seller_review}}
+                    {% endif %}
+            </div>
+            <div class="modal fade" id="modal{{order.id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <form action="{% url 'my_orders'%}" method="POST">
+                        {% csrf_token %}
+                        <input class="me-2" name="product_id" type="number" value="{{order.id}}" hidden></input>
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Finalizar Pedido</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <label class="pe-2">Nota do Produto</label>
+                            <input class="me-2" name="buyer_review" type="number" min="0" max="5" placeholder="0"></input>
+                        </div>
+                        <div class="modal-footer text-center">
+                            <button type="submit" class=" btn btn-primary" data-bs-dismiss="modal">Finalizar</button>
+                        </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+    <div class="vl-horizontal col-lg-8"></div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock content %}
