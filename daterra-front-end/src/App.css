@@ -174,7 +174,14 @@
   object-fit: scale-down;
   position: relative;
 }
-
+.modal {
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 10!important;
+}
+.modal-backdrop {
+  display: none;
+ 
+}
 .logo-arvore {
   max-width: 100%;
   max-height: 100%;
