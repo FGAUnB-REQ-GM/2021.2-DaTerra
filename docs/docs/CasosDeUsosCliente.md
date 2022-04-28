@@ -12,25 +12,31 @@ Este caso de uso é utilizado pelo cliente para serem feitas compras na platafor
 
 2. O cliente cria sua conta 
 
-3. O cliente acessa a página de busca de produtos 
+3. O sistema faz validação das informações
 
-4. O cliente procura o produto desejado 
+4. O sistema redireciona o cliente para página da loja
 
-5. O cliente seleciona a quantidade desejada do produto e adiciona em seu carrinho 
+5. O cliente procura o produto desejado 
 
-6. O cliente é redirecionado a página de finalização de compra  
+6. O cliente seleciona a quantidade desejada do produto e adiciona em seu carrinho 
 
-7. O cliente finaliza a compra dos produtos 
+7. O sistema envia o pedido para o produtor responsável
 
-8. O cliente é redireciona a página dos seus pedidos 
+8. O sistema redireciona o cliente para página de finalização de compra  
 
-9. O cliente entra em contato com o produtor escolhido para combinar a entrega e o pagamento 
+9. O cliente finaliza a compra dos produtos 
 
-10. O cliente finaliza o pedido 
+10. O sistemana redireciona o cliente para página dos seus pedidos 
 
-11. O cliente realiza o feedback do produtor 
+11. O cliente entra em contato com o produtor responsável para combinar a entrega e o pagamento 
 
-12. Casos de uso encerrado.  
+12. O cliente finaliza o pedido 
+
+13. O sistema abre o pop-up para envio de feedback
+
+14. O cliente envia o feedback do produtor 
+
+15. Casos de uso encerrado.  
 
 ### Subfluxos 
 
@@ -38,36 +44,27 @@ S1 – Buscar mais produtos
 
 1. O cliente adiciona produto ao seu carrinho 
 
-2. O cliente acessa o carrinho  
+2. O cliente acessa o carrinho
 
 3. O cliente antes de finalizar a compra decide adicionar mais produtos clicando na home 
 
-4. O cliente adiciona os produtos desejados 
+4. O sistemana redireciona o cliente para página da loja
 
-5. O cliente finaliza a compra 
+5. O cliente adiciona os produtos desejados 
+
+6. O cliente finaliza a compra 
+
+7. O sistema abre o pop-up para envio de feedback
+
+8. O cliente envia o feedback do produtor 
 
 ### Fluxo Alternativo
 
 Não se aplica. 
 
-### Cenários chaves 
-
-**Cenário 1** – Produtor cria sua conta – Produtor cria sua fazenda – Produtor anuncia seus produtos – Produtor analisa os pedidos – Produtor entra em contato com o cliente – Produtor finaliza a venda – Produtor realiza o feedback do cliente. 
-
- 
 ### Condições Prévias 
 
 Não se aplica. 
-
-### Requisitos especiais 
-
-**Segurança**
-
-O sistema deve guardar os dados do usuário com segurança. 
-
-**Idioma** 
-
-As páginas da aplicação têm de estar em língua portuguesa.
 
 ## Versionamento
 
@@ -75,3 +72,4 @@ As páginas da aplicação têm de estar em língua portuguesa.
 -------|----------|-------------------|--------
 1.0    |25/04/2022|Criação do conteúdo| Henrique Hida
 1.1    |27/04/2022|Adição do conteúdo | Mariana Rio
+1.2    |27/04/2022|Adição do conteúdo | Henrique Hida e Mariana Rio

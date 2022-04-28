@@ -12,15 +12,25 @@ Este caso de uso é utilizado pelo produtor para serem feitos anuncio dos seus p
 
 2. O produtor cria sua conta 
 
-3. O produtor cadastra sua fazenda 
+3. O sistema faz validação das informações
 
-4. O produtor anuncia seu produto 
+4. O produtor cadastra sua fazenda 
 
-5. O produtor acessa informações dos seus pedidos 
+5. O sistema faz validação das informações
 
-6. O produtor envia feedback de seus clientes 
+6. O produtor anuncia seu produto 
 
-7. Caso de uso encerrado. 
+7. O sistema adiciona o produto anunciado a página da loja
+
+8. O produtor acessa informações dos seus pedidos 
+
+9. O produtor finaliza o pedido
+
+10. O sistema abre o pop-up para envio de feedback
+
+11. O produtor envia o feedback
+
+12. Caso de uso encerrado. 
 
 ### Subfluxos 
 
@@ -36,31 +46,15 @@ S1 – Editar produtos
 
 5. O produtor salva as informações atualizadas 
 
-6. O sistema fecha o pop-up 
+6. O sistema fecha o pop-up. 
 
 ### Fluxo Alternativo
 
 Não se aplica. 
 
-### Cenários chaves 
-
-**Cenário 1** – Cliente cria sua conta – Cliente busca por produtos – Cliente seleciona o produto e sua quantidade desejada – Cliente finaliza a compra – Cliente entra em contato com o produtor – Cliente finaliza o pedido – Cliente realiza o feedback do produtor. 
-
-
 ### Condições Prévias 
 
 Não se aplica. 
-
-### Requisitos especiais 
-
-**Segurança**
-
-O sistema deve guardar os dados do usuário com segurança. 
-
-**Idioma** 
-
-As páginas da aplicação têm de estar em língua portuguesa.
-
 
 ## Versionamento
 
@@ -68,3 +62,4 @@ As páginas da aplicação têm de estar em língua portuguesa.
 -------|----------|-------------------|--------
 1.0    |25/04/2022|Criação do conteúdo| Henrique Hida
 1.1    |27/04/2022|Adição do conteúdo | Mariana Rio
+1.2    |27/04/2022|Adição do conteúdo | Henrique Hida e Mariana Rio

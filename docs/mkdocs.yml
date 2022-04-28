@@ -47,6 +47,7 @@ nav:
     - Casos de Uso:
       - Produtor: CasosDeUsoProdutor.md
       - Cliente: CasosDeUsosCliente.md
+    - Diagrama de Casos de Uso: DiagramaCasosDeUso.md      
   - MVP:
     - MVP: mvp1.md
   - Resultados: resultados.md
