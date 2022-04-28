@@ -156,20 +156,20 @@ const itens = array.map((element) =>
         </div>
 
         <div class="modal fade" id={`modal`+element.id} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Finalizar Pedido</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Finalizar Pedido</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="number" min="0" max="5" placeholder="0"></input>
+                    </div>
+                    <div class="modal-footer text-center">
+                        <button type="button" class=" btn btn-primary" data-bs-dismiss="modal">Finalizar</button>
+                    </div>
+                </div>
             </div>
-            <div class="modal-body">
-                <input type="number" min="0" max="5" placeholder="0"></input>
-            </div>
-            <div class="modal-footer text-center">
-                <button type="button" class=" btn btn-primary" data-bs-dismiss="modal">Finalizar</button>
-            </div>
-            </div>
-        </div>
         </div>
 </div>
 );

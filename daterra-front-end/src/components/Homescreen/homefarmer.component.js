@@ -162,17 +162,82 @@ export default class SignUp extends Component {
     render() {
         return (
             <div >
-                <Navbar/>
-                <div class="white-box col-lg-10" > 
-                    <SearchBar/>
-                    <div class="vl-horizontal col-lg-8"></div>
-                    {itens}
-                </div>
-                <a class="no-sub" href="">
-                    <div class="btn-add-farmer">
-                        <Add/>
+                <div >
+                    <Navbar/>
+                    <div class="white-box col-lg-10" > 
+                        <SearchBar/>
+                        <div class="vl-horizontal col-lg-8"></div>
+                        {itens}
                     </div>
-                </a>
+                    <a class="a-link no-sub ps-5" type="button" data-bs-toggle="modal" data-bs-target="#addProduct" >
+                        <div class="btn-add-farmer">
+                            <Add/>
+                        </div>
+                    </a>
+                </div>
+                <div class="modal fade" id="addProduct" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Adicionar Produto</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    
+                                        <div className="form-group">
+                                            <input type="text" className="form-control" placeholder="Foto do produto" />
+                                        </div>
+                                        <br/>
+                                        <div className="form-btn-picture">
+                                            <button type="submit" className="btn btn-dark btn-lg btn-block btn-picture">Enviar foto</button>
+                                        </div>
+                                        <div className="form-group">
+                                            <input type="text" className="form-control" placeholder="Nome do produto" />
+                                        </div>
+                                        <br/>
+                                        <br/>
+
+                                        <div className="form-group">
+                                            <select className="form-control" name="tipoproduto" id="tipo_produto">
+                                                <option value="" disabled selected>Tipo do produto - Selecione</option>
+                                                <option value="frutas">frutas</option>
+                                                <option value="verduras">verduras</option>
+                                                <option value="carnes">carnes</option>
+                                                <option value="grãos">grãos</option>
+                                            </select>
+                                        </div>
+                                        <br/>                    
+                                        <div className="form-group">
+                                            <input type="text" className="form-control" placeholder="Descrição do produto" />
+                                        </div>
+                                        <br/>
+                                        <div className="form-group">
+                                            <select className="form-control" name="unidade" id="unidade">
+                                                <option value="" disabled selected>Tipo do unidade - Selecione</option>
+                                                <option value="Quilogramas">Quilogramas</option>
+                                                <option value="Unidade">Unidade</option>
+                                                <option value="Peça">Peça</option>
+                                                <option value="Litros">Litros</option>
+                                            </select>
+                                        </div>
+                                        <br/>
+                                        <div className="form-group">
+                                            <input type="number" className="form-control" placeholder="Quantidade em estoque" />
+                                        </div>
+                                        <br/>
+                                        <div className="form-group">
+                                            <input type="number" className="form-control" placeholder="Preço por unidade" />
+                                        </div>
+
+                                </form>
+                            </div>
+                            <div class="modal-footer text-center">
+                                <button type="button" class=" btn btn-primary" data-bs-dismiss="modal">Adicionar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         );
     }
