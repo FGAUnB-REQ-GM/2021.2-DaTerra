@@ -13,6 +13,13 @@
                       LOGIN
                   </h2>
               </div>
+                {% if form.errors %}
+                        <div class="alert alert-danger" style="max-width: 250px;" role="alert">
+                            {{ form.username.errors }}
+                            {{ form.password.errors }}
+                            {{ form.non_field_errors }}
+                        </div>
+			    {% endif %}
               <div class="form-begin">
                   <div class="form-group">
                       <input type="text" name="username" id="id_username" class="form-control" placeholder="Insira seu CPF" />

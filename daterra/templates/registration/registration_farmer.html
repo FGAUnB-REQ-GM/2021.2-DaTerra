@@ -7,8 +7,8 @@
 		<form method="post" action="{% url 'registration_farmer' %}">
 			{% csrf_token %}
 			<div class="form-title">
-					<Logo/>
-					<h2>
+					<img src="{% static 'images/logo.png' %}" class="form-image me-3" />
+					<h2 class="pt-4">
 						Crie sua conta
 					</h2>
 			</div>

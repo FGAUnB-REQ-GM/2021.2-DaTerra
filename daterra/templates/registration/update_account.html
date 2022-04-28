@@ -4,12 +4,12 @@
 {% block content %}
 <div class="inner inner-register">
 	<div class="form">
-		<form method="post" action="{% url 'registration' %}">
+		<form method="post" action="{% url 'update_account' %}">
 			{% csrf_token %}
 			<div class="form-title">
 					<img src="{% static 'images/logo.png' %}" class="form-image me-3" />
 					<h2 class="pt-4">
-						Crie sua conta
+						Atualize sua conta
 					</h2>
 			</div>
 
@@ -21,23 +21,23 @@
 					{% endif %}
 				
 				<div class="form-group">	
-					<input class="form-control"	type="text" name="complete_name" maxlength="30" required id="id_complete_name" placeholder="Nome Completo">
+					<input class="form-control"	type="text" value={{user.complete_name}} name="complete_name" maxlength="30" required id="id_complete_name" placeholder="Nome Completo">
 				</div>
 				<br/>
 				<div class="form-group">
-					<input class="form-control" type="text" name="cpf" maxlength="30" autofocus required id="id_cpf" placeholder="CPF">
+					<input class="form-control" type="text" value={{user.cpf}} name="cpf" maxlength="30" autofocus required id="id_cpf" placeholder="CPF">
 				</div>
 				<br/>
 				<div class="form-group">
-					<input class="form-control" type="email" name="email" maxlength="255" required id="id_email" placeholder="E-mail">
+					<input class="form-control" type="email" value={{user.email}} name="email" maxlength="255" required id="id_email" placeholder="E-mail">
 				</div>
 				<br/>                    
 				<div class="form-group">
-					<input class="form-control" type="text" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" name="birthday_date" placeholder="Data de Nascimento">
+					<input class="form-control" type="text" value={{user.birthday_date}} pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" name="birthday_date" placeholder="Data de Nascimento">
 					<br/>
-					<input class="form-control" type="text" name="cellphone" maxlength="30" required id="id_cellphone" placeholder="Telefone">
+					<input class="form-control" type="text" value={{user.cellphone}} name="cellphone" maxlength="30" required id="id_cellphone" placeholder="Telefone">
 				</div>
-				<br/>
+                <br/>
 				<div class="form-group">
 					<input class="form-control" type="password" name="password1" autocomplete="new-password" required id="id_password1" placeholder="Senha">
 				</div>
@@ -49,12 +49,9 @@
 			</div>
 
 			<div class="form-btn-register">
-				<button type="submit" class="btn btn-dark btn-lg btn-block">Registre-se</button>
+				<button type="submit" class="btn btn-dark btn-lg btn-block">Edite sua conta</button>
 			</div>
 
-			<p class="register-text text-center">
-				Já possui uma conta? <a href="{% url 'login' %}">Acesse aqui</a>
-			</p>
 		</form>
 	</div>
 </div>

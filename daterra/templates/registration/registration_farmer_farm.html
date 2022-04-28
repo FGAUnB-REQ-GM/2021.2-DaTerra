@@ -7,8 +7,8 @@
         <form method="post" action="{% url 'registration_farmer_farm' %}" enctype="multipart/form-data">
             {% csrf_token %}
             <div class="form-title d-flex justify-content-center align-items-center">
-                    <img class="form-image me-4" src="{% static 'images/logo.png' %}" alt=""/>
-                    <h2>
+                    <img class="form-image me-3" src="{% static 'images/logo.png' %}" alt=""/>
+                    <h2 class="pt-4">
                         Cadastre sua fazenda
                     </h2>
             </div>
