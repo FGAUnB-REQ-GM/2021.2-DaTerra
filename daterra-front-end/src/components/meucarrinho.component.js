@@ -110,9 +110,14 @@ export default class SignUp extends Component {
                                 {itens}
                         </div>
                         <div class="col-lg-4" > 
-                            <div class="sticky-top mt-5">
-                                <div class="gambiarra"></div>
+                            <div class="sticky-top">
+                                <div class="img-buyer"></div>
+                                <div><img class="img-fluid" src={Buyer}/></div>
+                                <div class="mt-5 nome-elemento">Total <br/> R$ 365</div>
+                                <div class="botao-finalizar">
+                                <button className="btn btn-dark btn-lg btn-block">Finalizar</button>
                                 </div>
+                            </div>
                         </div>
                     </div>
                 </div>
